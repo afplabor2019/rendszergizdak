@@ -24,9 +24,17 @@
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
-        <div class="col-md-9 ftco-animate pb-5">
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">About Us</h1>
+        <div class="col-md-9 ftco-animate pb-5">            
+            <h1 class="mb-3 bread">
+            <?php
+              $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+              if (strpos($url,'contact.php') !== false) {
+                  echo 'Contact';
+              } else if (strpos($url,'about.php') !== false){
+                  echo 'About us';
+              } else if (strpos($url,'rent.php') !== false || strpos($url,'buy.php') !== false){
+                  echo 'Choose your car';
+              }?></h1>
           </div>
       </div>
     </div>
