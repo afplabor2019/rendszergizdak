@@ -32,11 +32,11 @@
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href='index.php?page=index' class="nav-link">Home</a></li>
-          <li class="nav-item"><a href='index.php?page=about' class="nav-link">About</a></li>
-          <li class="nav-item"><a href='index.php?page=rent' class="nav-link">Rentable cars</a></li>
-          <li class="nav-item"><a href='index.php?page=buy' class="nav-link">Buyable cars</a></li>
-          <li class="nav-item"><a href='index.php?page=contact' class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href='index.php' class="nav-link">Home</a></li>
+          <li class="nav-item"><a href='about.php' class="nav-link">About</a></li>
+          <li class="nav-item"><a href='rent.php' class="nav-link">Rentable cars</a></li>
+          <li class="nav-item"><a href='buy.php' class="nav-link">Buyable cars</a></li>
+          <li class="nav-item"><a href='contact.php' class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
