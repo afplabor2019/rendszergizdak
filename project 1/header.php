@@ -18,7 +18,8 @@
       <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
         <div class="col-md-9 ftco-animate pb-5">
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
-        </div>
+            <h1 class="mb-3 bread">About Us</h1>
+          </div>
       </div>
     </div>
 </section>
@@ -31,10 +32,11 @@
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="car.html" class="nav-link">Our Car</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href='index.php?page=index' class="nav-link">Home</a></li>
+          <li class="nav-item"><a href='index.php?page=about' class="nav-link">About</a></li>
+          <li class="nav-item"><a href='index.php?page=rent' class="nav-link">Rentable cars</a></li>
+          <li class="nav-item"><a href='index.php?page=buy' class="nav-link">Buyable cars</a></li>
+          <li class="nav-item"><a href='index.php?page=contact' class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>

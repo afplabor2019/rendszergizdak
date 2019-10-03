@@ -1,3 +1,5 @@
+<?php include "header.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,59 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Auto<span>road</span></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <li class="nav-item"><a href="car.html" class="nav-link">Our Car</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
-          <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">About Us</h1>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="ftco-section services-section">
       <div class="container">
@@ -75,7 +38,7 @@
 	              	<div class="icon"><span class="flaticon-placeholder"></span></div>
 	                <h3 class="heading mb-0 pl-3">24/7 Car Support</h3>
                 </div>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora deleniti aliquam nostrum hic placeat laborum quod dolorum iure quia, distinctio error quasi, quae veritatis libero sint accusantium suscipit exercitationem?</p>
               </div>
             </div>      
           </div>
@@ -86,7 +49,7 @@
 	              	<div class="icon"><span class="flaticon-placeholder"></span></div>
 	                <h3 class="heading mb-0 pl-3">Lots of location</h3>
                 </div>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corporis repellat quisquam quo, possimus est dicta blanditiis ducimus totam delectus illo, nihil eum deleniti accusamus atque vel similique animi vitae?</p>
               </div>
             </div>      
           </div>
@@ -97,7 +60,7 @@
 	              	<div class="icon"><span class="flaticon-placeholder"></span></div>
 	                <h3 class="heading mb-0 pl-3">Reservation</h3>
                 </div>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet incidunt, quidem dolorum suscipit, praesentium assumenda repellat ut eum corporis voluptatum ipsam dolores exercitationem soluta atque nihil iste quae quas natus.</p>
               </div>
             </div>      
           </div>
@@ -108,7 +71,7 @@
 	              	<div class="icon"><span class="flaticon-placeholder"></span></div>
 	                <h3 class="heading mb-0 pl-3">Rental Cars</h3>
                 </div>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor officia corrupti voluptatum consectetur repellat provident, reiciendis repellendus quas facilis est iusto assumenda modi eaque placeat sunt dicta at deleniti.</p>
               </div>
             </div>      
           </div>
@@ -130,7 +93,7 @@
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
                 <h3>Pick Destination</h3>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus dignissimos officia, aliquam delectus ab molestiae dolorum, distinctio, nostrum cupiditate mollitia recusandae iusto id accusamus fugiat. Beatae eius saepe dignissimos.</p>
               </div>
             </div>      
           </div>
@@ -139,7 +102,7 @@
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-select"></span></div>
                 <h3>Select Term</h3>
-                <p></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis ratione quis saepe rerum provident eveniet vitae tempore architecto magni earum quos minima at ipsa quasi, possimus, reprehenderit soluta. Mollitia, magni!</p>
               </div>
             </div>      
           </div>
@@ -148,7 +111,7 @@
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
                 <h3>Choose A Car</h3>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quod. Nam explicabo ex deserunt voluptate tempora nobis quasi dolores veritatis architecto! Enim ut officia, esse quos ipsa fuga aperiam doloremque.</p>
               </div>
             </div>      
           </div>
@@ -157,7 +120,7 @@
               <div class="media-body py-md-4 text-center">
               	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-review"></span></div>
                 <h3>Enjoy The Ride</h3>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis illo voluptatem incidunt reiciendis non! Tenetur voluptas, asperiores mollitia ab nihil, aspernatur earum expedita sed consequatur id adipisci voluptatibus eveniet quas?</p>
               </div>
             </div>      
           </div>
@@ -187,5 +150,7 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
+<?php include "footer.php"; ?>
+
   </body>
 </html>
