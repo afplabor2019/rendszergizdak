@@ -1,11 +1,12 @@
-<?php include "header.php"; ?>
+<?php include "database.php";
+	include "header.php"; ?>
 
 <section class="ftco-section ftco-no-pb ftco-no-pt">
     	<div class="container">
 	    	<div class="row">
 					<div class="col-md-12">
 						<div class="search-wrap-1 ftco-animate mb-5">
-							<form action="#" class="search-property-1">
+							<form method="get" class="search-property-1">
 		        		<div class="row">
 		        			<div class="col-lg align-items-end">
 		        				<div class="form-group">
@@ -13,18 +14,14 @@
 		        					<div class="form-field">
 		          					<div class="select-wrap">
 		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                      <select name="" id="" class="form-control">
-		                      	<option value="">Select Model</option>
-		                        <option value="">Model 1</option>
-		                        <option value="">Model 2</option>
-		                        <option value="">Model 3</option>
-		                        <option value="">Model 4</option>
-		                        <option value="">Model 5</option>
-		                        <option value="">Model 6</option>
-		                        <option value="">Model 7</option>
-		                        <option value="">Model 8</option>
-		                        <option value="">Model 9</option>
-		                        <option value="">Model 10</option>
+		                      <select name="model" id="" class="form-control">
+							  	<option></option>
+								<?php
+    							$query = $conn->prepare("SELECT `model` FROM `car` GROUP BY `model`");
+								$query->execute();
+								foreach ($query->fetchAll() as $value) : ?>
+									<option <?php if (isset($_GET['model']) && $_GET['model'] == $value['model']) echo "selected"?>><?=$value['model']?></option>
+								<?php endforeach; ?>
 		                      </select>
 		                    </div>
 				              </div>
@@ -36,18 +33,14 @@
 		        					<div class="form-field">
 		          					<div class="select-wrap">
 		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                      <select name="" id="" class="form-control">
-		                      	<option value="">Select Brand</option>
-		                        <option value="">Brand 1</option>
-		                        <option value="">Brand 2</option>
-		                        <option value="">Brand 3</option>
-		                        <option value="">Brand 4</option>
-		                        <option value="">Brand 5</option>
-		                        <option value="">Brand 6</option>
-		                        <option value="">Brand 7</option>
-		                        <option value="">Brand 8</option>
-		                        <option value="">Brand 9</option>
-		                        <option value="">Brand 10</option>
+		                      <select name="brand" id="" class="form-control">
+							  	<option></option>
+								<?php
+    							$query = $conn->prepare("SELECT `brand` FROM `car` GROUP BY `brand`");
+								$query->execute();
+								foreach ($query->fetchAll() as $value) : ?>
+									<option <?php if (isset($_GET['brand']) && $_GET['brand'] == $value['brand']) echo "selected"?>><?=$value['brand']?></option>
+								<?php endforeach; ?>
 		                      </select>
 		                    </div>
 				              </div>
@@ -59,38 +52,33 @@
 		        					<div class="form-field">
 		          					<div class="select-wrap">
 		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                      <select name="" id="" class="form-control">
-		                      	<option value="">Year Model</option>
-		                        <option value="">2019</option>
-		                        <option value="">2018</option>
-		                        <option value="">2017</option>
-		                        <option value="">2016</option>
-		                        <option value="">2015</option>
-		                        <option value="">2014</option>
-		                      </select>
+		                      <select name="year" id="" class="form-control">
+							  	<option></option>
+								<?php
+    							$query = $conn->prepare("SELECT `year` FROM `car` GROUP BY `year`");
+								$query->execute();
+								foreach ($query->fetchAll() as $value) : ?>
+									<option <?php if (isset($_GET['year']) && $_GET['year'] == $value['year']) echo "selected"?>><?=$value['year']?></option>
+								<?php endforeach; ?>
+							 </select>
 		                    </div>
 				              </div>
 			              </div>
 		        			</div>
 		        			<div class="col-lg align-items-end">
 		        				<div class="form-group">
-		        					<label for="#">Price Limit</label>
+		        					<label for="#">Max Price / day</label>
 		        					<div class="form-field">
 		          					<div class="select-wrap">
 		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                      <select name="" id="" class="form-control">
-		                      	<option value="">$1</option>
-		                        <option value="">$50</option>
-		                        <option value="">$100</option>
-		                        <option value="">$200</option>
-		                        <option value="">$300</option>
-		                        <option value="">$400</option>
-		                        <option value="">$500</option>
-		                        <option value="">$600</option>
-		                        <option value="">$700</option>
-		                        <option value="">$800</option>
-		                        <option value="">$900</option>
-		                        <option value="">$1000</option>
+		                      <select name="price" id="" class="form-control">
+							  	<option></option>
+								<?php
+    							$query = $conn->prepare("SELECT `price` FROM `car` GROUP BY `price`");
+								$query->execute();
+								foreach ($query->fetchAll() as $value) : ?>
+									<option <?php if (isset($_GET['price']) && $_GET['price'] == $value['price']) echo "selected"?>><?=$value['price']?></option>
+								<?php endforeach; ?>
 		                      </select>
 		                    </div>
 				              </div>
@@ -109,259 +97,36 @@
 					</div>
 	    	</div>
 	    </div>
-    </section>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <li class="nav-item active"><a href="car.html" class="nav-link">Our Car</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-
+	</section>
+	
     <section class="ftco-section">
     	<div class="container">
     		<div class="row">
+				<?php
+				$model = (!empty($_GET['model']) ? $_GET['model'] : '%');
+				$brand = (!empty($_GET['brand']) ? $_GET['brand'] : '%');
+				$year = (!empty($_GET['year']) ? $_GET['year'] : '%');
+				$price = (!empty($_GET['price']) ? $_GET['price'] : '%');
+				$query = $conn->prepare("SELECT * FROM `car` WHERE `type` LIKE 'SELL' AND `model` LIKE '".$model."' AND `brand` LIKE '".$brand."' AND `year` LIKE '".$year."' AND `price` LIKE '".$price."'");
+				$query->execute();
+				foreach ($query->fetchAll() as $car): ?>
     			<div class="col-md-3">
     				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
+    					<div class="img d-flex align-items-end" style="background-image: url(<?=$car['img']?>);">
     						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
+    							<span class="rate">$<?=$car['price']?></span>
     						</div>
     					</div>
     					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Audi</span>
+    						<h2 class="mb-0"><a href="car-single.html"><?=$car['name']?></a></h2>
+    						<span><?=$car['brand']?></span>
+							<span><?=$car['model']?></span>
     						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
     					</div>
     				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Ford</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Cheverolet</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Mercedes</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-5.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Audi</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-6.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Ford</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-7.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Cheverolet</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-8.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Mercedes</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-9.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Audi</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-10.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Ford</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-11.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Cheverolet</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="car-wrap ftco-animate">
-    					<div class="img d-flex align-items-end" style="background-image: url(images/car-12.jpg);">
-    						<div class="price-wrap d-flex">
-    							<span class="rate">$25</span>
-    							<p class="from-day">
-    								<span>From</span>
-    								<span>/Day</span>
-    							</p>
-    						</div>
-    					</div>
-    					<div class="text p-4 text-center">
-    						<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-    						<span>Mercedes</span>
-    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    			</div>				
+				<?php endforeach ?>
+    		</div>  		
     	</div>
 	</section>
-	
 <?php include "footer.php"; ?>
