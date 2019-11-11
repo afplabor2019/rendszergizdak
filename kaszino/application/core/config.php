@@ -1,7 +1,7 @@
 <?php
 
 // URLs
-define('URL', 'localhost/kaszino/');
+define('URL', 'http://localhost/kaszino');
 
 //define('PROTOCOL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https' : 'http');
 //define('PROTOCOL', 'http');
