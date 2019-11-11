@@ -2,6 +2,12 @@
 
 class Game extends Controller {
 
+    public $model;
+
+    function __construct() {
+        $this->model = $this->load_model('game_model');
+    }
+
     public function index() {
         $this->load_view('game/index');
     }
@@ -24,5 +30,9 @@ class Game extends Controller {
 
     public function slotgame() {
         $this->load_view('game/slotgame');
+    }
+
+    function updateBalace() {
+        $this->model->update_balace($_POST['id'], $_POST['balance']);
     }
 }
