@@ -1,5 +1,6 @@
 #Projektötlet
 A nagy projektünk egy Kaszinó alapú weboldalból fog állni kicsit legbutítottabb verzióban.
+
 Szerepel majd a weboldalon:
 •	Magát a weboldalt megtervezzük html/css-el formázva
 •	4 db játékot fog tartalmazni: -Roulett
