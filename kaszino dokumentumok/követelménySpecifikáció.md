@@ -5,22 +5,22 @@ A projekt célja egy olyan web-oldal megalkotása, aminek segítségével a felh
 
 # Funkcionális követelmény:
 - Regisztráció: 
-•	felhasználónév
-•	email
-•	jelszó
-•	számlaszám
+	felhasználónév
+	email
+	jelszó
+	számlaszám
 
 - Adatbázis:
-•	felhasználó adatai
--	Felhasználói: 
-•	felhasználói adatok módosítása
-•	egyenleg feltöltés
+  felhasználó adatai
+	Felhasználói: 
+	felhasználói adatok módosítása
+	egyenleg feltöltés
 
 -Játékok működése:
-•	kőpapír olló
-•	fej vagy írás
-•	félkarú rabló
-•	dobókocka
+	kőpapír olló
+	fej vagy írás
+	félkarú rabló
+	dobókocka
 
 # Rendszerre vonatkozó törvények:
 1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
