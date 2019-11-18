@@ -1,33 +1,33 @@
 # Kaszinó Követelmény Specifikáció
 
-# Áttekintés:
+## Áttekintés:
 A projekt célja egy olyan web-oldal megalkotása, aminek segítségével a felhasználók átélhetik az igazi kaszinó élményt. Különféle szerencse-játékokkal tehetik próbára a szerencséjüket, és nagyszerű nyereményekkel gazdagodhatnak a szerencsések. A felhasználó a weboldalon keresztül egyszerűen, biztonságosan feltöltheti az egyenlegét, melyet akár meg is többszörözhet a játékok segítségével és ezután a nyert összeget kikérheti a számlájára.
 
-# Funkcionális követelmény:
-Regisztráció: 
+## Funkcionális követelmény:
+### Regisztráció: 
 - felhasználónév
 - email
 - jelszó
 - számlaszám
 
-Adatbázis:
+### Adatbázis:
 - felhasználó adatai
 - Felhasználói: 
 - felhasználói adatok módosítása
 - egyenleg feltöltés
 
-Játékok működése:
+### Játékok működése:
 - kőpapír olló
 - fej vagy írás
 - félkarú rabló
 - dobókocka
 
-# Rendszerre vonatkozó törvények:
+## Rendszerre vonatkozó törvények:
 1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
 
-# Jelenlegi üzleti folyamatok modellje:
+## Jelenlegi üzleti folyamatok modellje:
 Igyekszünk megteremteni egy valódi kaszinó légkörét az oldalon, hogy élvezehetőbbé tegye a játékokat a felhasználók számára. Az adatok és a tranzakciók kezelését a legbiztonságosabb módon végezzük.
-# követelménylista:
+## követelménylista:
 | Modul                 | Név                           | Kifejtés                                                               |
 |-----------------------|-------------------------------|------------------------------------------------------------------------|
 | Felület               | Főoldal – index.html          | A weboldal megnyitásakor megjelenő oldal                               |
