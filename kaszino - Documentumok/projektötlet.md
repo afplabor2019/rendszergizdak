@@ -3,7 +3,7 @@ A nagy projektünk egy Kaszinó alapú weboldalból fog állni kicsit legbutíto
 
 Szerepel majd a weboldalon:
 -	Magát a weboldalt megtervezzük html/css-el formázva
-	4 db játékot fog tartalmazni:-Roulett
+-	4 db játékot fog tartalmazni:-Roulett
                                -Félkarúrabló
                                -Dobókockás játék
                                -Kő-Papír-Olló
