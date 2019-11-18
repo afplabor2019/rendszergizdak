@@ -1,0 +1,33 @@
+.kpo{text-align: center;
+	background-color: black; color:white; margin: 20px;
+}
+.eredmenyek{
+	margin: 20px auto;
+	border: 3px solid;
+	width: 600px;
+	height: 150px;
+	color:black;
+	background-image: url(kep2.jpg);
+	font-size: 40px;
+	font-weight: bold;
+	position:relative;
+}
+.eredmeny{text-align: left;
+	font-size: 30px;
+}
+#player{
+	position:absolute;
+	top: 50px;
+	left: 0px;
+}
+#szamito{
+	position:absolute;
+	top: 50px;
+	right: 0px;
+}
+.kijelzo{
+	position:absolute;
+	right:260px;
+	top: 50px;
+	bottom: 0px;
+}
