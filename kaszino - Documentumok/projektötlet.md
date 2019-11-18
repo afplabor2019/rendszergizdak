@@ -3,10 +3,10 @@ A nagy projektünk egy Kaszinó alapú weboldalból fog állni kicsit legbutíto
 
 Szerepel majd a weboldalon:
 -	Magát a weboldalt megtervezzük html/css-el formázva
--	4 db játékot fog tartalmazni: -Roulett
--	                              -Félkarúrabló
--	                              -Dobókockás játék
--	                              -Kő-Papír-Olló
+-	4 db játékot fog tartalmazni:  -Roulett
+-	                               -Félkarúrabló
+-	                               -Dobókockás játék
+-	                               -Kő-Papír-Olló
 -	Játékleírás készítése minden játékhoz.
 -	Ezeket mindd javascriptben megírni és szépen a weblap kinézetéhet igazítani.
 -	Felhasználó kezelés adatbázissal.(Be-és Kilépés az oldalon)
