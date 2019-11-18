@@ -4,23 +4,23 @@
 A projekt célja egy olyan web-oldal megalkotása, aminek segítségével a felhasználók átélhetik az igazi kaszinó élményt. Különféle szerencse-játékokkal tehetik próbára a szerencséjüket, és nagyszerű nyereményekkel gazdagodhatnak a szerencsések. A felhasználó a weboldalon keresztül egyszerűen, biztonságosan feltöltheti az egyenlegét, melyet akár meg is többszörözhet a játékok segítségével és ezután a nyert összeget kikérheti a számlájára.
 
 # Funkcionális követelmény:
-- Regisztráció: 
-	felhasználónév
-	email
-	jelszó
-	számlaszám
+Regisztráció: 
+- felhasználónév
+- email
+- jelszó
+- számlaszám
 
-- Adatbázis:
-  felhasználó adatai
-	Felhasználói: 
-	felhasználói adatok módosítása
-	egyenleg feltöltés
+Adatbázis:
+- felhasználó adatai
+- Felhasználói: 
+- felhasználói adatok módosítása
+- egyenleg feltöltés
 
--Játékok működése:
-	kőpapír olló
-	fej vagy írás
-	félkarú rabló
-	dobókocka
+Játékok működése:
+- kőpapír olló
+- fej vagy írás
+- félkarú rabló
+- dobókocka
 
 # Rendszerre vonatkozó törvények:
 1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
