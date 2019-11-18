@@ -11,6 +11,7 @@ Online kaszinó
 # Jegyzőkönyvvezető
 Jakab Ádám
 
+# Interjú
 
 - „Hogyan fog működni az elkészült projekt?”
 - „A projekt egy weboldal lesz. Tartalmazni fog négy játékot.
