@@ -5,9 +5,11 @@
 
 - Az oldalon található egy beléptető oldal ahol a felhasználó ki-/be tud lépni az accountjába
 - Miután belépett akkor fogja látni a számláját hogy mennyi pénz van rajta és a játékokat is akkor fogja látni
-- 3 féle játék lesz elérhető az oldalon: 
+- 4 féle játék lesz elérhető az oldalon: 
                        
                        - Félkarúrabló
+                       
+                       - Fej vagy írás
                        
                        - Dobókockás játék
                        
