@@ -5,4 +5,12 @@
 - Az oldalon található egy beléptető oldal ahol a felhasználó ki-/be tud lépni az accountjába
 - Miután belépett akkor fogja látni a számláját hogy mennyi pénz van rajta és a játékokat is akkor fogja látni
 - 4 féle játék lesz elérhető az oldalon: 
-
+                       - Roulett
+                       
+                       - Félkarúrabló
+                       
+                       - Dobókockás játék
+                       
+                       - Kő-Papír-Olló
+- Az oldalon továbbá lesz lehetőség pénz fel- és levételére is!
+- Ellenőrzi hogy mennyi pénzed van az oldalon és ha kevesebb mint amit te fel szeretnél rakni egy adott játékra akkor az nem lesz lehetséges!
