@@ -16,8 +16,8 @@ class Game extends Controller {
         $this->load_view('game/dice');
     }
 
-    public function headorwrite() {
-        $this->load_view('game/headorwrite');
+    public function headortail() {
+        $this->load_view('game/headortail');
     }
 
     public function rock_paper_scissors() {

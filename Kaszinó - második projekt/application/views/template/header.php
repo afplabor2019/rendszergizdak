@@ -19,7 +19,7 @@
             <li><a href="<?=URL?>/">Főoldal</a></li>
             <li><a href="<?=URL?>/game">Játék</a></li>
             <li><a href="<?=URL?>/game/dice">Kocka</a></li>
-            <li><a href="<?=URL?>/game/headorwrite">headorwrite</a></li>
+            <li><a href="<?=URL?>/game/headortail">head or tail</a></li>
             <li><a href="<?=URL?>/game/rock_paper_scissors">rock_paper_scissors</a></li>
             <li><a href="<?=URL?>/game/roulett">roulett</a></li>
             <li><a href="<?=URL?>/game/slotgame">slotgame</a></li>
