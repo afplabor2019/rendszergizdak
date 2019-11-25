@@ -1,5 +1,9 @@
 .dice {
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
+    color: black;
+    font-size: 62px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    cursor: pointer;
 }
