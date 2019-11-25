@@ -4,30 +4,38 @@
 .eredmenyek{
 	margin: 20px auto;
 	border: 3px solid;
-	width: 600px;
-	height: 150px;
-	color:black;
-	background-image: url(kep2.jpg);
+	width: 1300px;
+	height: 800px;
+	color:white;
+	background-image: url("../img/rock-paper/bg.jpg");
 	font-size: 40px;
 	font-weight: bold;
 	position:relative;
 }
-.eredmeny{text-align: left;
-	font-size: 30px;
+.eredmeny{text-align: center;
+	font-size: 100px;
 }
 #player{
 	position:absolute;
+	padding-left: 100px;
 	top: 50px;
 	left: 0px;
 }
 #szamito{
 	position:absolute;
+	padding-right: 100px;
 	top: 50px;
 	right: 0px;
 }
 .kijelzo{
 	position:absolute;
-	right:260px;
+	right:50%;
 	top: 50px;
-	bottom: 0px;
+}
+
+.valaszt{
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	text-align: center;
 }

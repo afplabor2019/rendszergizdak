@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?=URL?>/assets/vendor/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/style.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/dice.css">
+    <link rel="stylesheet" href="<?=URL?>/assets/css/rock-paper.css">
 </head>
 <body>
 
