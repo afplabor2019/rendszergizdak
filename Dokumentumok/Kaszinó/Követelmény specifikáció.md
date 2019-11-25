@@ -36,7 +36,7 @@ Igyekszünk megteremteni egy valódi kaszinó légkörét az oldalon, hogy élve
 | Felület               | kőpapír olló játék            |                                                                        |
 | Felület               | fej vagy írás játék           |                                                                        |
 | Felület               | félkarú rabló                 |                                                                        |
-| Felület               | dobókocka                     |                                                                        |
+| Felület               | dobókocka                     | A játékos fogad a dobókocka kimenetelére, ha eltalája azt nyer.        |
 | Felület               | Design                        | letisztult                                                             |
 | Modifikáció           | Felhasználó kezelés           | regisztráció, bejelentkezés, egyenleg                                  |
 | Jogosultság           | Bejelentkezés / Kijelentkezés | Admin vagy sima felhasználó kezelése                                   |
