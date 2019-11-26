@@ -1,7 +1,7 @@
 <?php
 
 // URLs
-define('URL', 'http://localhost:8080/Kaszin%c3%b3%20-%20m%c3%a1sodik%20projekt/');
+define('URL', 'http://localhost:8080/Kaszino');
 
 //define('PROTOCOL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https' : 'http');
 //define('PROTOCOL', 'http');
