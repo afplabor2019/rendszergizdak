@@ -11,5 +11,7 @@ CREATE TABLE `users` (
 );
 
 INSERT INTO `users` (`name`, `balance`, `password`) VALUES
-    ('Dani', 10000, 'asd')
+    ('Dani', 10000, 'asd'),
+    ('Alice', 10000, 'alma'),
+    ('Bob', 10000, 'korte')
 ;

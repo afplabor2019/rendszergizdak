@@ -1,8 +1,12 @@
 <?php
 
 class Model {
-
+    
     function __construct() {
+    }
+
+    function update_balance($id,$balance){
+        $this->executeDML("UPDATE `users` SET `balance`='".$balance."' WHERE `id`= '".$id."'");
     }
     
     function get_user($id) {
