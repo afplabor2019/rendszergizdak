@@ -1,5 +1,5 @@
 <div class="jatek" id="jatek">
-    <h1 class="kpo">Rock, Papper, Scissors Game</h1>
+    <h1 class="rps">Rock, Papper, Scissors Game</h1>
     
 </div>
 <div class="score-board">
@@ -12,11 +12,14 @@
     <p>Paper covers Rock. YOU WIN!</p>
 </div>
     <div class= "choices">
-        <input class="choice" id="r" i class="far fa-hand-rock"></i>
-
-        <input class="choice" id="p" i class="far fa-hand-paper"></i>
-
-        <input class="choice" id="s" i class="far fa-hand-scissors"></i>
-
+        <div class="choice" id="r">
+            <i class="far fa-hand-rock"></i>
+        </div> 
+        <div class="choice" id="p">
+            <i class="far fa-hand-paper"></i>
+        </div>
+        <div class="choice" id="s"> 
+            <i class="far fa-hand-scissors"></i>
+        </div>
         <p id="action-message">Make your move!</p>
     </div>

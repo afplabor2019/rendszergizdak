@@ -1,7 +1,8 @@
-.kpo{text-align: center;
+.rps{text-align: center;
 	background-color: black; color:white; margin: 20px;
 }
-.eredmenyek{
+
+.score-board{
 	margin: 20px auto;
 	border: 3px solid;
 	width: 1300px;
@@ -12,30 +13,74 @@
 	font-weight: bold;
 	position:relative;
 }
+
+.badge {
+	background:#E2584D;
+	color: white;
+	font-size: 30px;
+}
+
 .eredmeny{text-align: center;
 	font-size: 100px;
 }
-#player{
+#user-label{
 	position:absolute;
 	padding-left: 100px;
 	top: 50px;
 	left: 0px;
 }
-#szamito{
+#computer-label{
 	position:absolute;
 	padding-right: 100px;
 	top: 50px;
 	right: 0px;
 }
-.kijelzo{
-	position:absolute;
-	right:50%;
-	top: 50px;
+
+.result{
+	font-size: 40px;
+	color: white;
 }
 
-.valaszt{
-	position: absolute;
-	bottom: 0;
-	left: 30%;
+.result > p {
 	text-align: center;
+	font-weight: bold;
+}
+
+.choices {
+	text-align: center;
+}
+
+.choice {
+	border: 4px solid white;
+	border-radius: 50%;
+	margin: 0 20px;
+	padding: 5px;
+	display: inline-block;
+	transition: all 0.2s ease;
+}
+
+.choice:hover {
+	cursor: pointer;
+	background: black;
+}
+
+.action-message {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+.green-glow{
+	border: 4px solid #4dcc7d;
+	box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow{
+	border: 4px solid #fc121b;
+	box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow{
+	border: 4px solid #464647;
+	box-shadow: 0 0 10px #25292b;
 }

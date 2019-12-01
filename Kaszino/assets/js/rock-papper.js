@@ -1,63 +1,81 @@
+let userScore= 0;
+let computerScore= 0;
+const userScore_span = document.getElementById("user-score");
+const computerScore_span = document.getElementById("computer-score");
+const scoreBoard_div = document.querySelector(".score-board");
+const result_p = document.querySelector(".result > p");
+const rock_div = document.getElementById("r");
+const paper_div = document.getElementById("p");
+const scissors_div = document.getElementById("s");
 
-let jatekos_pont= 0;
-let computer_pont= 0;
-const jatekos_pont_span = document.getElementById("jatekos-score");
-const computer_pont_span = document.getElementById("computer-score");
-const eredmenyek_div = document.querySelector(".eredmenyek");
-const eredmeny_div = document.querySelector(".eredmeny");
-const ko_div = document.getElementById("ko");
-const papir_div = document.getElementById("papir");
-const ollo_div = document.getElementById("ollo");
-
-function szamitogep_valasztas() {
-	const valasztasok = ['k', 'p', 'o'];
-	const random_szam = Math.floor(Math.random() * 3);
-	return valasztasok[random_szam];
-}
-function nyer(jatekos_valaszt, computer_valasztas){
-	jatekos_pont++;
-	jatekos_pont_span.innerHTML = jatekos_pont;
-	computer_pont_span.innerHTML = computer_pont;
-
-}
-function veszít(jatekos_valaszt, computer_valasztas){
-	computer_pont++;
-	jatekos_pont_span.innerHTML = jatekos_pont;
-	computer_pont_span.innerHTML = computer_pont;
-}
-function döntetetlen(jatekos_valaszt, computer_valasztas){
-	jatekos_pont_span.innerHTML = jatekos_pont;
-	computer_pont_span.innerHTML = computer_pont;
+function getComputerChoice() {
+	const choices = ['r', 'p', 's'];
+	const randomNumber = Math.floor(Math.random() * 3);
+	return choices[randomNumber];
 }
 
-function jatek(jatekos_valaszt){
-	const computer_valasztas = szamitogep_valasztas();
-	switch (jatekos_valaszt + computer_valasztas) {
-		case "ko":
-		case "pk":
-		case "op":
-		nyer(jatekos_valaszt, computer_valasztas);
+function convertToWord(letter) {
+	if (letter === "r") return "Rock";
+	if (letter === "p") return "Paper";
+	return "Scissors";
+}
+
+function win(userChoice, computerChoice){
+	userScore++;
+	userScore_span.innerHTML = userScore;
+	computerScore_span.innerHTML = computerScore;
+	result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. YOU WIN!`;
+	document.getElementById(userChoice).classList.add('green-glow');
+	setTimeout(function() { document.getElementById(userChoice).classList.remove('green-glow') }, 200);
+}
+
+function lose(userChoice, computerChoice){
+	computerScore++;
+	userScore_span.innerHTML = userScore;
+	computerScore_span.innerHTML = computerScore;
+	result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. YOU LOST!`;
+	document.getElementById(userChoice).classList.add('red-glow');
+	setTimeout(function() { document.getElementById(userChoice).classList.remove('red-glow') }, 200);
+}
+
+function draw(userChoice, computerChoice){
+	userScore_span.innerHTML = userScore;
+	computerScore_span.innerHTML = computerScore;
+	result_p.innerHTML = `${convertToWord(userChoice)} equals ${convertToWord(computerChoice)}. IT'S A DRAW!`;
+	document.getElementById(userChoice).classList.add('gray-glow');
+	setTimeout(function() { document.getElementById(userChoice).classList.remove('gray-glow') }, 200);
+}
+
+function game(userChoice){
+	const computerChoice = getComputerChoice();
+	switch (userChoice + computerChoice) {
+		case "rs":
+		case "pr":
+		case "sp":
+		win(userChoice, computerChoice);
 		break;
-		case "kp":
-		case "po":
-		case "ok":
-		veszít(jatekos_valaszt, computer_valasztas);
+		case "rp":
+		case "ps":
+		case "sr":
+		lose(userChoice, computerChoice);
 		break;
-		case "kk":
+		case "rr":
 		case "pp":
-		case "oo":
-		döntetetlen(jatekos_valaszt, computer_valasztas);
+		case "ss":
+		draw(userChoice, computerChoice);
 		break;
 	}
 }
 
 function main(){
-ko_div.addEventListener('click', function(){jatek("k");
+rock_div.addEventListener('click', function(){
+	game("r");
 })
-papir_div.addEventListener('click', function(){jatek("p");
+paper_div.addEventListener('click', function(){
+	game("p");
 })
-ollo_div.addEventListener('click', function(){jatek("o");
+scissors_div.addEventListener('click', function(){
+	game("s");
 })
 }
-
 main();
