@@ -13,17 +13,21 @@ class Register extends Controller {
     }
 
     function register_user(){
-        $db = $db = mysqli_connect('localhost', 'root', '', 'kaszino');
-        $query = "SELECT * FROM `users` WHERE `name` = '".$_POST['name']."'";
-        $result= mysqli_query($db,$query);
+        $result= $this->$model->getRecord("SELECT * FROM `users` WHERE `name` = '".$_POST['name']."'");
 
-        if(mysqli_num_rows($result)){
-            //TO DO: hiba kiírás
+        if (!empty($result)) {
+            $_SESSION['message'] = 'A felhasználónév már létezik';
             header("Location: ".URL."/register");
-        } 
-        else if($_POST['password'] == $_POST['confirmPassword']) {
+        }
+
+        else if ($_POST['password'] == $_POST['confirmPassword']) {
             $this->model->insert_user($_POST['name'],$_POST['password']);
-            header("Location: ".URL."/home");
+            $_SESSION['message'] = 'Nem egyezik a két jelszó';
+            header("Location: ".URL."/register");
+
+        } else {            
+            $_SESSION['message'] = 'Sikeres reg!';
+            header("Location: ".URL."/register");
         }
 
        
