@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?=URL?>/assets/css/style.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/dice.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/rock-paper.css">
+    <link rel="stylesheet" href="<?=URL?>/assets/css/form.css">
 </head>
 <body>
 
