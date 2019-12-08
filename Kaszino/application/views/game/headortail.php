@@ -1,15 +1,11 @@
 <section class="container-fluid text-center">    
     <div >
         <div class="row justify-content-center">
-            <div id="dice1" class="dice"><i class="fas fa-dice-one" onclick="chosenOne()"></i></div>
-            <div id="dice2" class="dice"><i class="fas fa-dice-two" onclick="chosenTwo()"></i></div>
-            <div id="dice3" class="dice"><i class="fas fa-dice-three" onclick="chosenThree()"></i></div>
-            <div id="dice4" class="dice"><i class="fas fa-dice-four" onclick="chosenFour()"></i></div>
-            <div id="dice5" class="dice"><i class="fas fa-dice-five" onclick="chosenFive()"></i></div>
-            <div id="dice6" class="dice"><i class="fas fa-dice-six" onclick="chosenSix()"></i></div>
+            <div id="head" class="block" onclick="chosenHead()">Head</div>
+            <div id="tail" class="block" onclick="chosenTail()">Tail</div>
         </div>
         <div>
-            <button class="btn-roll" onclick="rollDice()">Roll Dice</button> 
+            <button class="btn-go" onclick="go()">Go</button> 
         </div>
         <div>   
             <button class="btn-5" onclick="bet_five()">Bet 5</button>
