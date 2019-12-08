@@ -1,5 +1,5 @@
-<section>    
-    <div class="container text-center">
+<section class="container-fluid text-center">    
+    <div >
         <div class="row">
             <div id="dice1" class="dice"><i class="fas fa-dice-one" onclick="chosenOne()"></i></div>
             <div id="dice2" class="dice"><i class="fas fa-dice-two" onclick="chosenTwo()"></i></div>

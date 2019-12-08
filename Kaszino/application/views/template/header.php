@@ -11,35 +11,48 @@
     <link rel="stylesheet" href="<?=URL?>/assets/css/dice.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/rock-paper.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/form.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
 
 <header>
-    <nav>
-        <ul>
-            <li><a href="<?=URL?>/">Home</a></li>
-            <?php if (!empty($user['id'])): ?>
-                <li><a href="<?=URL?>/game">Games</a></li>
-                <li><a href="<?=URL?>/game/dice">Dice</a></li>
-                <li><a href="<?=URL?>/game/headortail">Head or Tail</a></li>
-                <li><a href="<?=URL?>/game/rock_paper_scissors">Rock,Paper,Scissors</a></li>
-                <li><a href="<?=URL?>/game/roulett">Roulett</a></li>
-                <li><a href="<?=URL?>/game/slotgame">Slotgame</a></li>
-                <li><a href="<?=URL?>/settings">Settings</a></li>
-                <li><a href="<?=URL?>/home/logout">Logout</a></li>
-            <?php else: ?>
-                <li><a href="<?=URL?>/register">Register</a></li>
-            <?php endif; ?>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item"><a class="nav-link" href="<?=URL?>/">Home</a></li>
+                <?php if (!empty($user['id'])): ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Games
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="<?=URL?>/game/dice">Dice</a>
+                            <a class="dropdown-item" href="<?=URL?>/game/headortail">Head or Tail</a>
+                            <a class="dropdown-item" href="<?=URL?>/game/rock_paper_scissors">Rock,Paper,Scissors</a>
+                            <a class="dropdown-item" href="<?=URL?>/game/roulett">Roulett</a>
+                            <a class="dropdown-item" href="<?=URL?>/game/slotgame">Slotgame</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="<?=URL?>/settings">Settings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?=URL?>/home/logout">Logout</a></li>
+                <?php else: ?>
+                    <li class="nav-item"><a class="nav-link" href="<?=URL?>/register">Register</a></li>
+                <?php endif; ?>
+            </ul>
+        </div>
+    
+        <?php if (empty($user['name'])): ?>
+        <form action="home/login" method="POST" class="form-inline">
+            <div class="input-group">
+                <input class="form-control" placeholder="Username" type="text" name="name">
+                <input class="form-control" placeholder="Password" type="password" name="password">
+            </div>
+            <button>Login</button>
+        </form>
+        <?php else: ?>
+            
+            <span class="navbar-text">User: <?=$user['name']?> Balance: <?=$user['balance']?></span>
+        <?php endif; ?>
     </nav>
-    <?php if (empty($user['name'])): ?>
-    <form action="home/login" method="POST">
-        <input type="text" name="name">
-        <input type="password" name="password">
-        <button>Login</button>
-    </form>
-    <?php else: ?>
-        <p>user: <?=$user['name']?></p>
-        <p>balance: <?=$user['balance']?></p>
-    <?php endif; ?>
 </header>
