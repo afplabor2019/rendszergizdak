@@ -1,48 +1,130 @@
-window.addEventListener( 'DOMContentLoaded', function () {
-	
-    var buttonRollDice = document.querySelector( '.btn-roll' );
+var bet = document.getElementById( 'bet' );
+var chosenNumber = 0;
+var betCounter = 0;
 
-function rollDice () {
+function rollDice() {
+    if(chosenNumber > 0 && betCounter > 0)
+    {   
+        var status = document.getElementById( 'status' );
+        var result = Math.floor( Math.random() * 6 ) + 1;
+        betCounter = 0;
+        bet.innerHTML = betCounter;
 
-    var dice1 = document.getElementById( 'dice1' );
-    var dice2 = document.getElementById( 'dice2' );
-    var dice3 = document.getElementById( 'dice3' );
-    var dice4 = document.getElementById( 'dice4' );
-    var dice5 = document.getElementById( 'dice5' );
-    var dice6 = document.getElementById( 'dice6' );
-    var status = document.getElementById( 'status' );
-
-    var result = Math.floor( Math.random() * 6 ) + 1;
-    var bid_count = 0;
-
-    if (result == 1)
-    {
-
+        if(result == chosenNumber)
+        {
+            status.innerHTML = 'You rolled the same number, You won! ' + '(' + 'Result: ' + result + ' Chosen number: ' + chosenNumber + ')';
+        }
+        else
+        {
+            status.innerHTML = 'You lost. Please try again! ' +  '(' + 'Result: ' + result + ' Chosen number: ' + chosenNumber + ')';
+        }
     }
-    else if (result == 2)
+    else if(betCounter == 0)
     {
-
+        var status = document.getElementById( 'status' );
+        status.innerHTML = 'Please place your bets!'
     }
-    else if (result == 3)
+    else if(chosenNumber == 0)
     {
-        
+        var status = document.getElementById( 'status' );
+        status.innerHTML = 'Please choose a number!';
     }
-    else if (result == 4)
-    {
-        
-    }
-    else if (result == 5)
-    {
-        
-    }
-    else if (result == 6)
-    {
-        
-    }
-
-    status.innerHTML = 'You rolled: ' + result;    
 }
 
-buttonRollDice.addEventListener( 'click', rollDice, false );
+function bet_five() {
+    betCounter += 5;
+    bet.innerHTML = betCounter;
+}
 
-}, false);
+function bet_ten() {
+    betCounter += 10;
+    bet.innerHTML = betCounter;
+}
+
+function bet_twenty() {
+    betCounter += 20;
+    bet.innerHTML = betCounter;
+}
+
+function bet_fifty() {
+    betCounter += 50;
+    bet.innerHTML = betCounter;
+}
+
+function bet_hundred() {
+    betCounter += 100;
+    bet.innerHTML = betCounter;
+}
+
+function bet_twohundred() {
+    betCounter += 200;
+    bet.innerHTML = betCounter;
+}
+
+$(document).ready(function(){
+    $("#dice1").click(function(){
+        if(chosenNumber == 0) {
+            $("#dice1").css("background-color", "green");
+            chosenNumber = 1;            
+        }
+        else if(chosenNumber == 1){
+            $("#dice1").css("background-color", "white");
+            chosenNumber = 0;      
+        }  
+    });    
+
+    $("#dice2").click(function(){
+        if(chosenNumber == 0) {
+            $("#dice2").css("background-color", "green");
+            chosenNumber = 2;            
+        }
+        else if(chosenNumber == 2) {
+            $("#dice2").css("background-color", "white");
+            chosenNumber = 0;      
+        }  
+    });
+
+    $("#dice3").click(function(){
+        if(chosenNumber == 0) {
+            $("#dice3").css("background-color", "green");
+            chosenNumber = 3;            
+        }
+        else if(chosenNumber == 3) {
+            $("#dice3").css("background-color", "white");
+            chosenNumber = 0;      
+        }  
+    });
+
+    $("#dice4").click(function(){
+        if(chosenNumber == 0) {
+            $("#dice4").css("background-color", "green");
+            chosenNumber = 4;            
+        }
+        else if(chosenNumber == 4) {
+            $("#dice4").css("background-color", "white");
+            chosenNumber = 0;      
+        }  
+    });
+
+    $("#dice5").click(function(){
+        if(chosenNumber == 0) {
+            $("#dice5").css("background-color", "green");
+            chosenNumber = 5;            
+        }
+        else if(chosenNumber == 5) {
+            $("#dice5").css("background-color", "white");
+            chosenNumber = 0;      
+        }  
+    });
+
+    $("#dice6").click(function(){
+        if(chosenNumber == 0) {
+            $("#dice6").css("background-color", "green");
+            chosenNumber = 6;            
+        }
+        else if(chosenNumber == 6){
+            $("#dice6").css("background-color", "white");
+            chosenNumber = 0;      
+        }  
+    });
+});
