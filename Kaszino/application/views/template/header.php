@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?=URL?>/assets/css/dice.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/rock-paper.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/head-or-tail.css">
+    <link rel="stylesheet" href="<?=URL?>/assets/css/slotgame.css">
     <link rel="stylesheet" href="<?=URL?>/assets/css/form.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
