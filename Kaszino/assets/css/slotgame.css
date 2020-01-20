@@ -80,7 +80,7 @@ body {
   .tilted {
     transform: rotateY(45deg);
   }
-  /*=====*/
+  
   .spin-0     { transform: rotateX(-3719deg); }
   .spin-1     { transform: rotateX(-3749deg); }
   .spin-2     { transform: rotateX(-3779deg); }
@@ -93,9 +93,9 @@ body {
   .spin-9     { transform: rotateX(-3989deg); }
   .spin-10    { transform: rotateX(-4019deg); }
   .spin-11    { transform: rotateX(-4049deg); }
-  /*=====*/
+  
   @keyframes back-spin {
-      /*0%    { transform: rotateX(0deg); }*/
+  
       100%  { transform: rotateX(30deg); }
   }
   @keyframes tiltin {
