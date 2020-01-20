@@ -6,11 +6,14 @@
 			    <div id="ring4" class="ring"></div>
 			    <div id="ring5" class="ring"></div>
 </div>
+
+
+<div>
 <div>
 	<button class="go">Start spinning</button>
-	</div>
-  
-	<div>
+</div>
+
+
 		<label>
 			 <input type="checkbox" id="xray">
 				Show inner workings
