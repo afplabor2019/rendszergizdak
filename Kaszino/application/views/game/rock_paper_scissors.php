@@ -6,9 +6,9 @@
     <div class="score-board">
         <div id="user-label" class="badge">Player</div>
         <div id="computer-label" class="badge">Computer</div>
-        <span id="user-score">0</span>-<span id="computer-score">0</span>
+        <div class="user-score">0</div>-<div class="computer-score">0</div>
     </div>
-    
+
     <div class="result">
         <p>Paper covers Rock. YOU WIN!</p>
     </div>
