@@ -8,7 +8,7 @@
         <div id="computer-label" class="badge">Computer</div>
         <span id="user-score">0</span>-<span id="computer-score">0</span>
     </div>
-
+    
     <div class="result">
         <p>Paper covers Rock. YOU WIN!</p>
     </div>
@@ -24,4 +24,7 @@
         </div>
         <p id="action-message">Make your move!</p>
     </div>
+
+    </div>
+
 </section>
