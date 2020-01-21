@@ -21,12 +21,12 @@
 - Ne statikus weboldalakat adjunk át az ügyfélnek, amit nem tud majd módosítani a jövőben és állandóan szól majd az üzemeltetőjének, hogy még ez a kép kell, a szöveg nem stimmel vagy a linkek változtak. Ezeket mind meg tudja változtani majd az admin menüben.
 
 ## Jelenlegi üzleti folyamatok modellje:
--A mai világban elég nagy szerepet tölt be az online szerencsejáték.
--Igyekszünk megteremteni egy valódi kaszinó légkörét az oldalon, hogy élvezehetőbbé tegye a játékokat a felhasználók számára. Az adatok és a tranzakciók kezelését a legbiztonságosabb módon végezzük.
--Sűrűn kell frissíteni, új tartalmakkal feltölteni, hogy a lehető legtöbb személyhez elérjen és sikere legyen az üzletnek.
+- A mai világban elég nagy szerepet tölt be az online szerencsejáték.
+- Igyekszünk megteremteni egy valódi kaszinó légkörét az oldalon, hogy élvezehetőbbé tegye a játékokat a felhasználók számára. Az adatok és a tranzakciók kezelését a legbiztonságosabb módon végezzük.
+- Sűrűn kell frissíteni, új tartalmakkal feltölteni, hogy a lehető legtöbb személyhez elérjen és sikere legyen az üzletnek.
 
 ## Igényelt üzleti folyamatok modellje:
--Azért, hogy egyszerűbbé tegyük az egyéni személyek igényeinek beteljesülését egy online kaszinót hozunk létre, ahol átélhetik
+- Azért, hogy egyszerűbbé tegyük az egyéni személyek igényeinek beteljesülését egy online kaszinót hozunk létre, ahol átélhetik
 egy valódi kaszinó légkörét.
 
 ## Használati esetek:
