@@ -26,6 +26,7 @@
 
 ## Jelenlegi üzleti folyamatok modellje:
 -A mai világban rengeteg egyéni vállalkozó, kis cég, üzlet, szabaduszó szeretne portfólió oldalt létrehozni. Amit sűrűn kell frissíteni, új tartalmakkal feltölteni, hogy a lehető legtöbb ügyfélhez elérjenek. Ebben szeretnénk segíteni nekik, hogy ne kelljen minden weboldal szerkesztéshez informatikust hívni és időt és energiát spóroljanak azzal, hogy az admin menüben maguknak szerkeszthetik az oldalukat.
+-Igyekszünk megteremteni egy valódi kaszinó légkörét az oldalon, hogy élvezehetőbbé tegye a játékokat a felhasználók számára. Az adatok és a tranzakciók kezelését a legbiztonságosabb módon végezzük.
 
 ## Igényelt üzleti folyamatok modellje:
 
