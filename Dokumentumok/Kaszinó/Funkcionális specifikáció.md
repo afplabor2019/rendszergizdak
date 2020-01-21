@@ -17,6 +17,9 @@
 - Az oldalon továbbá lesz lehetőség pénz fel- és levételére is!
 - Ellenőrzi hogy mennyi pénzed van az oldalon és ha kevesebb mint amit te fel szeretnél rakni egy adott játékra akkor az nem lesz lehetséges!
 
+## Jelenlegi helyzet:
+- Ne statikus weboldalakat adjunk át az ügyfélnek, amit nem tud majd módosítani a jövőben és állandóan szól majd az üzemeltetőjének, hogy még ez a kép kell, a szöveg nem stimmel vagy a linkek változtak. Ezeket mind meg tudja változtani majd az admin menüben.
+
 ## Használati esetek:
 - ADMIN: Az ADMIN beléphet mindegyik más szerepkörbe, hogy az hibamentes működését ellenőrizhesse. Az Admin(ok) feladata a rendszer problémamentes működése. Ez egyben jár azzal, hogy az egész rendszerhez van hozzáférésük. Tudniuk kell a felhasználók jogosultságait, szerepkörét.
 - USER: A USER azaz a felhasználó az ADMIN által rá ruházott jogosultságokkal rendelkezik:
