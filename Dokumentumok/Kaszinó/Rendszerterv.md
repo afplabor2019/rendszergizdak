@@ -15,3 +15,6 @@
 
 ## 3. Üzleti folyamat modellje:
 - A modellhez tartozó grafikont csatoljuk a rendszertervet tároló mappához.
+
+## 4. Követelmények:
+- Le írja nagyvonalakban mit csinál a program
