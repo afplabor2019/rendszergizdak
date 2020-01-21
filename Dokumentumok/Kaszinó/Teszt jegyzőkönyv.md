@@ -21,7 +21,13 @@
 ### A Register gomb register oldalon való tesztelése
 - Amit várok:
   Bal egér gombbal rákattintva a regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
- - Ami történik:
+- Ami történik:
   A regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
 ##### Helyes működés
 
+### A Login gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva belépteti a felhasználót az adott paraméterek alapján.
+- Ami történik:
+  Belépteti a felhasználót az adott paraméterek alapján.
+##### Helyes működés
