@@ -101,7 +101,14 @@
 
 ### A Games listában a Dice gomb tesztelése
 - Amit várok:
-  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+  Bal egér gombbal rákattintva megjeleníti a felületen magát a játékot.
+- Ami történik:
+  Megjeleníti a felületen a játékot.
+##### Helyes működés
+
+### A Games listában a Head or Tail gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva megjeleníti a felületen magát a játékot.
 - Ami történik:
   Megjeleníti a felületen a játékot.
 ##### Helyes működés
