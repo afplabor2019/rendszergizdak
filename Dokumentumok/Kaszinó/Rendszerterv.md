@@ -18,3 +18,8 @@
 
 ## 4. Követelmények:
 - Le írja nagyvonalakban mit csinál a program
+
+## 5. Funkcionális terv: 
+### Rendszerszereplők: 
+- Admin
+- User
