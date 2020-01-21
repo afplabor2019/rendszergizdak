@@ -3,6 +3,9 @@
 ## Áttekintés:
 A projekt célja egy olyan web-oldal megalkotása, aminek segítségével a felhasználók átélhetik az igazi kaszinó élményt. Különféle szerencse-játékokkal tehetik próbára a szerencséjüket, és nagyszerű nyereményekkel gazdagodhatnak a szerencsések. A felhasználó a weboldalon keresztül egyszerűen, biztonságosan feltöltheti az egyenlegét, melyet akár meg is többszörözhet a játékok segítségével és ezután a nyert összeget kikérheti a számlájára.
 
+## Vágyálom rendszer
+Célunk egy dinamikus weboldal létrehozása, egyszerű admin felülettel, így a megrendelő kedvére módosíthatja a linkeket, kategóriákatat hozhat létre, feltöltheti képeit, leírást adhat meg hozzá, a fejlesztő nélkül is. Egy reszponzív felületet szeretnénk létrehozni, hogy alkalmazkodjon a különböző platformokról való megtekintéshez. Egy rendes Kaszinó érzést szeretnénk átadni az embereknek.A weboldalon a Games fülnél lehet a játékokat kipróbálni. Itt lehet téteket rakni és ha nem elegendő az ember pénze akkor sjanos ismételten fel kell hogy töltsön egy kevés összeget, hogy újra jól szórakozhasson.
+
 ## Funkcionális követelmények:
  - A nyitó oldal egyszerű letisztult megjelenése, átlátható képeket és olvasható szövegeket tartalmaz
 - Minden oldal tetején menüsáv jelenik meg, ami a navigáációt segíti
@@ -32,8 +35,6 @@ A projekt célja egy olyan web-oldal megalkotása, aminek segítségével a felh
 ## Rendszerre vonatkozó törvények:
 1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
 
-## Jelenlegi üzleti folyamatok modellje:
-Igyekszünk megteremteni egy valódi kaszinó légkörét az oldalon, hogy élvezehetőbbé tegye a játékokat a felhasználók számára. Az adatok és a tranzakciók kezelését a legbiztonságosabb módon végezzük.
 ## követelménylista:
 | Modul                 | Név                           | Kifejtés                                                               |
 |-----------------------|-------------------------------|------------------------------------------------------------------------|
