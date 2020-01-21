@@ -1,6 +1,7 @@
 # Rendszerterv
 ## 1. A rendszer célja:
 - A rendszer célja, hogy vevő egy olyan dinamikus weboldalt kapjon, ahol egyedül, a fejlesztő bevonása nélkül képes a weboldalt szerkeszteni egy admin felületen keresztül, ahová egyedi azonosítóval tud bejelentkezni. Fel tud tölteni képeket, azokhoz leírást tud megadni, szerkeszteni tudja az elérhetőségeit és mindent ami számára fontos. A felhasználó megtekintheti mindazt amit az oldal adminja feltölt, és visszajelzés tud neki küldeni.
+
 ## 2. Projektterv:
 
 ### Projektmunkások és felelőségek:
@@ -23,3 +24,29 @@
 ### Rendszerszereplők: 
 - Admin
 - User
+
+## 10. Teszterv: 
+### Fő oldal tesztelése:
+- Home gomb tesztelése.
+- Register gomb tesztelése.
+- Login gomb tesztelése.
+
+### Register oldal tesztelése:
+- User name tesztelése.
+- Password tesztelése.
+- Confirm password tesztelése.
+### Settings felület tesztelése:
+- Current Name tesztelése.
+- Current Password tesztelése.
+- New Name tesztelése.
+- New Password tesztelése.
+- Loadup Balance tesztelése.
+### Login felület tesztelése.
+- Username tesztelése.
+- Password tesztelése.
+
+
+## 11. Telepítési terv: 
+- Webes alkalmazás, tehát a szoftver webes felületéhez csak egy ajánlott böngésző telepítése
+szükséges (Google Chrome, Firefox, Opera, Safari), külön szoftver
+nem kell hozzá.
