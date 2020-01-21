@@ -32,6 +32,8 @@ Célunk egy dinamikus weboldal létrehozása, egyszerű admin felülettel, így 
 - félkarú rabló
 - dobókocka
 
+## Rendszerre vonatkozó szabványok:
+
 ## Követelmény lista:
 | Modul                 | Név                           | Kifejtés                                                               |
 |-----------------------|-------------------------------|------------------------------------------------------------------------|
