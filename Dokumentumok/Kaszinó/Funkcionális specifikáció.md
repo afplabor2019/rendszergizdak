@@ -30,4 +30,7 @@
 
 ## Képernyő tervek:
 
-## Adatbázis terv:
+## Fogalomtár:
+- Dinamikus weboldal: Az adatbáziból kiolvasott adatok jelennek meg. ezeket bármikor lehet módosítani és a kinézet ehhez alkalmazkodik.
+- Reszponzív felület: Optimális megjelenést biztosít, könnyen olvasható, egyszerű navigáció a lehető legkevesebb átméretezéssel és görgetéssel, a legkülönfélébb eszközök. (Az asztali számítógép monitorjától egészen a mobiltelefonokig)
+- Slideshow: Diavetítés (Az oldal látogatója bal/jobb oldalra való kattintással léphet az előző/következő oldalra)
