@@ -46,9 +46,45 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság,
 és könnyebb bővítés érdekében
 
-## 10. Telepítési terv: 
+## 10. Teszterv: 
+### Fő oldal tesztelése:
+- Home gomb tesztelése.
+- Register gomb tesztelése.
+- Login gomb tesztelése.
+
+### Fő oldal tesztelése bejelentkezés után:
+- Games - dice gomb tesztelése.
+- Games - head or tail gomb tesztelése.
+- Games - rock, paper, scissors gomb tesztelése.
+- Games - roulett gomb tesztelése.
+- Games - slot game gomb tesztelése.
+- Settings gomb tesztelése.
+- Logout gomb tesztelése.
+
+### Register oldal tesztelése:
+- User name tesztelése.
+- Password tesztelése.
+- Confirm password tesztelése.
+- Register gomb tesztelése.
+
+### Settings felület tesztelése:
+- Current Name tesztelése.
+- Current Password tesztelése.
+- New Name tesztelése.
+- New Password tesztelése.
+- Loadup Balance tesztelése.
+- Update gomb tesztelése.
+- Upload gomb tesztelése.
+
+### Login felület - sáv - tesztelése.
+- Username tesztelése.
+- Password tesztelése.
+- Login gomb tesztelése.
+
+
+## 11. Telepítési terv: 
 - Webes alkalmazás, tehát a szoftver webes felületéhez csak egy ajánlott böngésző telepítése
 szükséges (Google Chrome, Firefox, Opera, Safari), külön szoftver
 nem kell hozzá.
 
-## 11. Karbantartási terv:
+## 12. Karbantartási terv:
