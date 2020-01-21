@@ -10,3 +10,10 @@
 - Ami történik:
   Megnyitja a főoldalt.
 ##### Helyes működés
+
+### A Register gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva a regisztrációs oldalt nyitja meg.
+- Ami történik:
+  Megnyitja a regisztrációs oldalt.
+##### Helyes működés
