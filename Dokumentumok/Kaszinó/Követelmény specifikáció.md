@@ -1,22 +1,29 @@
-# Kaszinó Követelmény Specifikáció
+# Követelmény Specifikáció
 
 ## Áttekintés:
 A projekt célja egy olyan web-oldal megalkotása, aminek segítségével a felhasználók átélhetik az igazi kaszinó élményt. Különféle szerencse-játékokkal tehetik próbára a szerencséjüket, és nagyszerű nyereményekkel gazdagodhatnak a szerencsések. A felhasználó a weboldalon keresztül egyszerűen, biztonságosan feltöltheti az egyenlegét, melyet akár meg is többszörözhet a játékok segítségével és ezután a nyert összeget kikérheti a számlájára.
 
-## Funkcionális követelmény:
-### Regisztráció: 
+## Funkcionális követelmények:
+ - A nyitó oldal egyszerű letisztult megjelenése, átlátható képeket és olvasható szövegeket tartalmaz
+- Minden oldal tetején menüsáv jelenik meg, ami a navigáációt segíti
+- Minden oldal alján a footer jelenik meg ahol a kapcsolat tartáshoz kellő socialmedia linkeket és oldalakat tartalmazza
+- A kapcsolat oldalon az elérhetőségek jelennek meg és üzenet küldési lehetőség egy form segítségével, google térkép is látható
+- A kategóriák füllel a képgaléria nyitható meg és a kategóriának megfelelő képek jelennek meg
+- Admin felület, itt lehet módosítani az oldalon megjelenő tartalmakat
+
+## Regisztráció: 
 - felhasználónév
 - email
 - jelszó
 - számlaszám
 
-### Adatbázis:
+## Adatbázis:
 - felhasználó adatai
 - Felhasználói: 
 - felhasználói adatok módosítása
 - egyenleg feltöltés
 
-### Játékok működése:
+## Játékok működése:
 - kőpapír olló
 - fej vagy írás
 - félkarú rabló
