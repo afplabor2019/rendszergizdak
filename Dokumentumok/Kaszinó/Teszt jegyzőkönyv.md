@@ -27,7 +27,7 @@
 
 ### A Login gomb tesztelése
 - Amit várok:
-  Bal egér gombbal rákattintva belépteti a felhasználót az adott paraméterek alapján.
+  Bal egér gombbal rákattintva belépteti a felhasználót az adott paraméterek alapján, majd megjeleníti a főoldalt.
 - Ami történik:
-  Belépteti a felhasználót az adott paraméterek alapján.
+  Belépteti a felhasználót az adott paraméterek alapján, majd megjeleníti a főoldalt.
 ##### Helyes működés
