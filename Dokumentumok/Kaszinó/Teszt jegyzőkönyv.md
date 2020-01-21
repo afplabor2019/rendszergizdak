@@ -29,6 +29,13 @@
 ##### Tesztelő: Jakab Ádám
 #### Dátum: 2020.01.21.
 
+### A Home gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva a főoldalt nyitja meg.
+- Ami történik:
+  Megnyitja a főoldalt.
+##### Helyes működés
+
 ### A Logout gomb tesztelése
 - Amit várok:
   Bal egér gombbal rákattintva kilépteti a felhasználót, majd megjeleníti a főoldalt.
@@ -52,4 +59,11 @@
   Bal egér gombbal rákattintva a regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
 - Ami történik:
   A regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
+##### Helyes működés
+
+### A Games gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva megjeleníti egy legördülő listában a játékokat.
+- Ami történik:
+  Megjeleníti egy legördülő listában a játékokat.
 ##### Helyes működés
