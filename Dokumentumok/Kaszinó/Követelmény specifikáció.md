@@ -60,4 +60,4 @@
 | Felület               | Felhasználói beállítások      | egyenleg feltöltése/lekérése                                           |
 
 ## Rendszerre vonatkozó törvények:
-- 1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
+- Az 1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
