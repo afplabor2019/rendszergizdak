@@ -95,3 +95,13 @@
 - Ami történik:
   Megjeleníti a felületen a játékot.
 ##### Helyes működés
+
+##### Tesztelő: Jakab Ádám
+#### Dátum: 2020.01.21.
+
+### A Games listában a Dice gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+- Ami történik:
+  Megjeleníti a felületen a játékot.
+##### Helyes működés
