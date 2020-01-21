@@ -13,12 +13,11 @@
 
 ### Ütemterv:
 
-
 ## 3. Üzleti folyamat modellje:
 - A modellhez tartozó grafikont csatoljuk a rendszertervet tároló mappához.
 
 ## 4. Követelmények:
-- Le írja nagyvonalakban mit csinál a program
+- Le írja nagyvonalakban mit csinál a program.
 
 ## 5. Funkcionális terv: 
 ### Rendszerszereplők: 
@@ -86,3 +85,5 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 - Webes alkalmazás, tehát a szoftver webes felületéhez csak egy ajánlott böngésző telepítése
 szükséges (Google Chrome, Firefox, Opera, Safari), külön szoftver
 nem kell hozzá.
+
+## 12. Karbantartási terv:
