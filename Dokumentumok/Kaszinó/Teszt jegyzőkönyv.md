@@ -1,8 +1,8 @@
 # Teszt jegyzőkönyv
 
-## Fő oldal tesztelése
+## Főoldal tesztelése bejelentkezés előtt
 ##### Tesztelő: Jakab Ádám
-#### Dátum: 2020.01.15.
+#### Dátum: 2020.01.21.
 
 ### A Home gomb tesztelése
 - Amit várok:
@@ -18,13 +18,6 @@
   Megnyitja a regisztrációs oldalt.
 ##### Helyes működés
 
-### A Register gomb register oldalon való tesztelése
-- Amit várok:
-  Bal egér gombbal rákattintva a regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
-- Ami történik:
-  A regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
-##### Helyes működés
-
 ### A Login gomb tesztelése
 - Amit várok:
   Bal egér gombbal rákattintva belépteti a felhasználót az adott paraméterek alapján, majd megjeleníti a főoldalt.
@@ -32,9 +25,31 @@
   Belépteti a felhasználót az adott paraméterek alapján, majd megjeleníti a főoldalt.
 ##### Helyes működés
 
+## Főoldal tesztelése bejelentkezés után
+##### Tesztelő: Jakab Ádám
+#### Dátum: 2020.01.21.
+
 ### A Logout gomb tesztelése
 - Amit várok:
   Bal egér gombbal rákattintva kilépteti a felhasználót, majd megjeleníti a főoldalt.
 - Ami történik:
   Kilépteti a felhasználót, majd megjeleníti a főoldalt.
+##### Helyes működés
+
+### A Settings gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva megnyitja a beállítások oldalt.
+- Ami történik:
+  Megjeleníti a beállítások oldalt.
+##### Helyes működés
+
+## Regisztrációs oldal tesztelése 
+##### Tesztelő: Jakab Ádám
+#### Dátum: 2020.01.21.
+
+### A Register gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva a regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
+- Ami történik:
+  A regisztrációt végrehajtja, eltárolja a felhasználót adatbáziban.
 ##### Helyes működés
