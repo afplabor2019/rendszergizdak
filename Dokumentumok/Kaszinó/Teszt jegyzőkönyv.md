@@ -67,3 +67,31 @@
 - Ami történik:
   Megjeleníti egy legördülő listában a játékokat.
 ##### Helyes működés
+
+## Games listában található gombok tesztelése
+### A Games listában a Rock,Paper,Scissors gomb tesztelése
+##### Tesztelő: Zajácz Ákos
+#### Dátum: 2020.01.21.
+- Amit várok:
+  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+- Ami történik:
+  Megjeleníti a felületen a játékot.
+##### Helyes működés
+
+### A Games listában a Roulette gomb tesztelése
+##### Tesztelő: Zajácz Ákos
+#### Dátum: 2020.01.21.
+- Amit várok:
+  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+- Ami történik:
+  Megjelenít egy üres oldalt.
+##### Helyes működés
+
+### A Games listában a Slotgame gomb tesztelése
+##### Tesztelő: Zajácz Ákos
+#### Dátum: 2020.01.21.
+- Amit várok:
+  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+- Ami történik:
+  Megjeleníti a felületen a játékot.
+##### Helyes működés
