@@ -32,10 +32,7 @@ Célunk egy dinamikus weboldal létrehozása, egyszerű admin felülettel, így 
 - félkarú rabló
 - dobókocka
 
-## Rendszerre vonatkozó törvények:
-1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
-
-## követelménylista:
+## Követelmény lista:
 | Modul                 | Név                           | Kifejtés                                                               |
 |-----------------------|-------------------------------|------------------------------------------------------------------------|
 | Felület               | Főoldal – index.html          | A weboldal megnyitásakor megjelenő oldal                               |
@@ -51,3 +48,6 @@ Célunk egy dinamikus weboldal létrehozása, egyszerű admin felülettel, így 
 | Jogosultság / Felület | Regisztráció                  | Regisztrációs felület, adatok bekérése                                 |
 | Jogosultság           | Megerősítő e-mail             | Megerősítő email küld a felhasználónak                                 |
 | Felület               | Felhasználói beállítások      | egyenleg feltöltése/lekérése                                           |
+
+## Rendszerre vonatkozó törvények:
+1991. évi XXXIV.törvény a szerencsejáték szervezéséről : https://net.jogtar.hu/jogszabaly?docid=99100034.tv
