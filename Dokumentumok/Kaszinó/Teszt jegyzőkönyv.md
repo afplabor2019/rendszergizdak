@@ -31,3 +31,10 @@
 - Ami történik:
   Belépteti a felhasználót az adott paraméterek alapján, majd megjeleníti a főoldalt.
 ##### Helyes működés
+
+### A Logout gomb tesztelése
+- Amit várok:
+  Bal egér gombbal rákattintva kilépteti a felhasználót, majd megjeleníti a főoldalt.
+- Ami történik:
+  Kilépteti a felhasználót, majd megjeleníti a főoldalt.
+##### Helyes működés
