@@ -138,6 +138,26 @@
   Nem jelenik meg a játék, se a funkciói és ezáltal a gombok kipróbálása is meghiusul
 ##### Helytelen működés
 
+### Dice játék tesztelése
+- Behozta magát a játékot
+- Amit csinálok:
+  Kipróbálom a gombokat(Dice) és megfigyelem hogy működnek-e.
+- Amit várok:
+  A játék gombok megfelelően működjenek.
+- Ami történik:
+  A gombok megfelelően működnek.
+##### Helyes működés
+
+### Head or Tail játék tesztelése
+- Behozta magát a játékot
+- Amit csinálok:
+  Kipróbálom a gombokat(Head or Tail) és megfigyelem hogy működnek-e.
+- Amit várok:
+  A játék gombok megfelelően működjenek.
+- Ami történik:
+  A gombok megfelelően működnek.
+##### Helyes működés
+
 ### Slotgame játék tesztelése
 - Behozta magát a játékot
 - Amit csinálok:
