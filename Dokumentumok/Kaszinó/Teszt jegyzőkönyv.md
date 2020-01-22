@@ -69,31 +69,32 @@
 ##### Helyes működés
 
 ## Games listában található gombok tesztelése
-### A Games listában a Rock,Paper,Scissors gomb tesztelése
+
 ##### Tesztelő: Zajácz Ákos
+
 #### Dátum: 2020.01.21.
+
+### A Games listában a Rock,Paper,Scissors gomb tesztelése
+
 - Amit várok:
-  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+  Bal egér gombbal rákattintva megjeleníti a játék felületét.
 - Ami történik:
-  Megjeleníti a felületen a játékot.
+  Megjeleníti a játék felületét.
 ##### Helyes működés
 
 ### A Games listában a Roulette gomb tesztelése
-##### Tesztelő: Zajácz Ákos
-#### Dátum: 2020.01.21.
+
 - Amit várok:
-  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+  Bal egér gombbal rákattintva megjeleníti a játék felületét.
 - Ami történik:
-  Megjelenít egy üres oldalt.
+  Megjeleníti a játék felületét.
 ##### Helyes működés
 
 ### A Games listában a Slotgame gomb tesztelése
-##### Tesztelő: Zajácz Ákos
-#### Dátum: 2020.01.21.
 - Amit várok:
-  Bal egér gombbal rákattintva megjeleníti egy felületen magát a játékot.
+  Bal egér gombbal rákattintva megjeleníti a játék felületét.
 - Ami történik:
-  Megjeleníti a felületen a játékot.
+  Megjeleníti a játék felületét.
 ##### Helyes működés
 
 ##### Tesztelő: Jakab Ádám
@@ -112,3 +113,37 @@
 - Ami történik:
   Megjeleníti a felületen a játékot.
 ##### Helyes működés
+
+## Játékok tesztelése
+
+##### Tesztelő: Zajácz Ákos
+
+#### Dátum: 2020.01.21.
+
+### Rock,Paper,Scissors játék tesztelése
+- Behozta magát a játékot
+- Amit csinálok:
+  Kipróbálom a gombokat(Kő,Papír,Olló) és megfigyelem hogy működnek-e.
+- Amit várok:
+  A játék gombok megfelelően működjenek.
+- Ami történik:
+  A gombok megfelelően működnek.
+##### Helyes működés
+
+### Roulett játék tesztelése
+- Nem hozta be magát a játékot
+- Amit várok:
+  Lássam magát a játékot, funkciókat és tudjam kipórbálni a gombokat
+- Ami történik:
+  Nem jelenik meg a játék, se a funkciói és ezáltal a gombok kipróbálása is meghiusul
+##### Helytelen működés
+
+### Slotgame játék tesztelése
+- Behozta magát a játékot
+- Amit csinálok:
+  Kipróbálom a gombokat és megfigyelem hogy működnek-e.
+- Amit várok:
+  A játék gombok megfelelően működjenek.
+- Ami történik:
+  Nem működnek maguk a gombok és ezáltal a játék se
+##### Helytelen működés
