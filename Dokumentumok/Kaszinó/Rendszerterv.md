@@ -3,11 +3,14 @@
 - A rendszer célja, hogy vevő egy olyan dinamikus weboldalt kapjon, ahol egyedül, a fejlesztő bevonása nélkül képes a weboldalt szerkeszteni egy admin felületen keresztül, ahová egyedi azonosítóval tud bejelentkezni. Fel tud tölteni képeket, azokhoz leírást tud megadni, szerkeszteni tudja az elérhetőségeit és mindent ami számára fontos. A felhasználó megtekintheti mindazt amit az oldal adminja feltölt, és visszajelzés tud neki küldeni.
 
 ## 2. Projektterv:
+- A projektet weblapra fejlesztük front- és backend segítségével. 
+- Az elkülönített feladatokon más-más emberek dolgoznak.
+- Frontend fejlesztése HTML/CSS segítségével, valamint bejelentkezéshez php használata adatbázis kezeléséhez.
 
 ### Projektmunkások és felelőségek:
 
 #### Backend munkálatok: Horváth Dániel, Jakab Ádám, Zajácz Ákos, Juhász Zsombor 
- - Feladat: Adatbázis kapcsolat létrehozása, lekérdezések megírása, admin felület
+- Feladat: Adatbázis kapcsolat létrehozása, lekérdezések megírása, admin felület
 #### Frontend munkálatok: Jakab Ádám, Zajácz Ákos, Juhász Zsombor, Horváth Dániel
 - Feladat: Egy letisztult, könnyen kezelhető felhasználói felület létrehozása
 
@@ -18,6 +21,9 @@
 
 ## 4. Követelmények:
 - Le írja nagyvonalakban mit csinál a program.
+- A rendszer fejlesztése HTML/CSS valamint JavaScript és php segítségével történik.
+- A weblap felépítése, valamint dizájnolása a HTML/CSS nyelv implementálásával valósítandó meg. 
+- Az adatbázishoz csatlakozás, bejelentkezés, adminisztrátori jogosultság felismertetése, stb. pedig a php/JavaScript-el.
 
 ## 5. Funkcionális terv: 
 ### Rendszerszereplők: 
@@ -29,12 +35,13 @@
 - Továbbá felhasznlónevet, jelszót tud módosítani.
 
 ## 6. Fizikai környezet:
-- Az alkalmazás webes platformra készül, tehát elérhető okos eszközökről illetve számítógépekől
+
 ### Fejlesztői eszközök:
 - MySQL Workbench
 - Visual Studio Code
 
-## 7. Architektuális terv: 
+## 7. Architektuális terv:
+
 
 ## 8. Adatbázis terv: 
 - Az adatbázis tervhez tartozó grafikont csatoljuk a rendszertervet tároló mappához.
