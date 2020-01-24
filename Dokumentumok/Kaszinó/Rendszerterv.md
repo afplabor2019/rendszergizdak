@@ -53,6 +53,7 @@
 
 ## 8. Adatbázis terv: 
 - Az adatbázis tervhez tartozó grafikont csatoljuk a rendszertervet tároló mappához.
+- Az adatbázisban tároljuk az egyes felhasználókat, adataikat, illetve a feltöltött összegük mennyiségét.
 
 ## 9. Implementációs terv:
 - Web: 
@@ -61,7 +62,7 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság,
 és könnyebb bővítés érdekében
 
-## 10. Teszterv:
+## 10. Tesztterv:
 ### Fő oldal tesztelése:
 - Home gomb tesztelése.
 - Register gomb tesztelése.
