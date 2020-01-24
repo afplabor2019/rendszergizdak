@@ -17,7 +17,24 @@
 ### Ütemterv:
 
 ## 3. Üzleti folyamat modellje:
-- A modellhez tartozó grafikont csatoljuk a rendszertervet tároló mappához.
+### Üzleti szereplő és munkatárs elemzése
+- Üzleti szereplő: Tilki Csaba
+- Üzleti munkatárs: Horváth Dániel, Jakab Ádám, Zajácz Ákos, Juhász Zsombor
+
+- Megrendelő: Tilki Csaba
+- Fejlesztő: Horváth Dániel, Jakab Ádám, Zajácz Ákos, Juhász Zsombor
+
+### Üzleti folyamat elemzése
+#### Üzleti folyamatok:
+- Megrendelés,
+- Weblapkészítés,
+- Szolgáltatás,
+- Üzemeltetés
+
+### Üzleti entitás elemzése
+#### Üzleti entitások:
+- Pénz,
+- Weboldal,
 
 ## 4. Követelmények:
 - Le írja nagyvonalakban mit csinál a program.
