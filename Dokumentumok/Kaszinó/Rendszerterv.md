@@ -119,6 +119,8 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 - Password tesztelése.
 - Confirm password tesztelése.
 - Register gomb tesztelése.
+- Kivételek tesztelése:
+  - használt felhasználó névvel nem lehet regisztrálni
 
 ### Settings felület tesztelése:
 - Current Name tesztelése.
@@ -128,11 +130,16 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 - Loadup Balance tesztelése.
 - Update gomb tesztelése.
 - Upload gomb tesztelése.
+- Kivételek tesztelése:
+  - new name ne lehessen ugyan az mint más felhasználóé
 
 ### Login felület - sáv - tesztelése.
 - Username tesztelése.
 - Password tesztelése.
 - Login gomb tesztelése.
+
+###Balance
+- Változás tesztelése
 
 ## 11. Telepítési terv: 
 - Ehhez az alkalmazáshoz nem kell külön szoftvert letölteni illetve telepíteni különböző platformokon ahhoz, hogy használni tudjuk a későbbiekben.
