@@ -87,9 +87,10 @@
 - A kliens oldali programokat egy php alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. 
 - A kliensekkel JSON objektumokkal kommunikál.
 
-## 8. Adatbázis terv: 
-- Az adatbázis tervhez tartozó grafikont csatoljuk a rendszertervet tároló mappához.
+## 8. Adatbázis terv:
 - Az adatbázisban tároljuk az egyes felhasználókat, adataikat, illetve a feltöltött összegük mennyiségét.
+- Users tábla: id, name, password, balance
+- tárolt eljárások: register, balanceChange 
 
 ## 9. Implementációs terv:
 - Web: 
