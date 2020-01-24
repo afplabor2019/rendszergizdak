@@ -138,7 +138,7 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 - Password tesztelése.
 - Login gomb tesztelése.
 
-###Balance
+### Balance
 - Változás tesztelése
 
 ## 11. Telepítési terv: 
