@@ -49,8 +49,27 @@
 
 ### Rendszerhasználati esetek:
 #### Felhasználó:
-- A beállításokban tul feltölteni összeget az egyenlegére.
-- Továbbá felhasznlónevet, jelszót tud módosítani.
+- Közelező számára a regisztráció, csak így tud hozzáférni a játékokhoz.
+- Regisztráció után bármikor beléphet a megadott nevével és jelszavával.
+- Bejelentkezés után a menu sávjában megjelnik a felhsaználó neve és egyenlege.
+- A "Settings" -ben tud feltölteni összeget az egyenlegére, továbbá felhasznlónevet, jelszót tud módosítani.
+- A "Games" menüpont alatt kiválaszthat egy játékok amivel játszani szeretne.
+- A játékokat csak tét megrakásával lehet játszani, ezért fontos hogy a felhasználó rendelkezzen összeggel az egyenlegén.
+- A nyert összeg aotomatikusan hozzáadódik a felhasználó egyenlegéhez.
+- Kijelentkezésre a menüben elhelyezkedő Logout-ra való kattintással van lehetőség.
+
+##### Menühierarchia:
+- bejelentkezés előtt:
+  - Home: főoldal
+  - Register: regisztrácio
+  - menüsávban található login
+  
+- bejelentkezés után:
+  - Home: főoldal
+  - Games: Dice, Head or Tail, Rock Paper Scissors, Roulett, Slotgame
+  - Settings: egyenleg feltöltése, szamlara utalása, felhasználó név/jelszó változtatása
+  - Logout: kijelentkezés
+  - Jelenlegi felhasználó neve és egyenlege
 
 ## 6. Fizikai környezet:
 - A rendszer fejlesztése HTML/CSS valamint JavaScript és php segítségével történik.
