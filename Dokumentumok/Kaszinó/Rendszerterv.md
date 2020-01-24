@@ -1,6 +1,6 @@
 # Rendszerterv
 ## 1. A rendszer célja:
-- A rendszer célja, hogy vevő egy olyan dinamikus weboldalt kapjon, ahol egyedül, a fejlesztő bevonása nélkül képes a weboldalt szerkeszteni egy admin felületen keresztül, ahová egyedi azonosítóval tud bejelentkezni. Fel tud tölteni képeket, azokhoz leírást tud megadni, szerkeszteni tudja az elérhetőségeit és mindent ami számára fontos. A felhasználó megtekintheti mindazt amit az oldal adminja feltölt, és visszajelzés tud neki küldeni.
+- A rendszer célja, egy olyan weboldal megvalósítása, ami egy kaszinó hangulatát és funkcionalitását reprezentálja. Ahhoz, hogy a weblapot használják a különböző személyek, először regisztrálniuk kell magukat az oldal regisztrációs felületén. A weboldalon számos játék lesz található, amelyekkel - folyamatos karbantartás alatt - szeretnénk minden egyes regisztrált felhasználó számára biztosítani a kellems időtöltést. Pénz feltöltés segítségével tudnak fogadni a lehetséges kimenetelekre, majd egy bizonyos összeg után át tudják a fentlévő összegüket utalni egy az általuk megadott bankszámlára.
 
 ## 2. Projektterv:
 - A projektet weblapra fejlesztük front- és backend segítségével. 
@@ -10,9 +10,9 @@
 ### Projektmunkások és felelőségek:
 
 #### Backend munkálatok: Horváth Dániel, Jakab Ádám, Zajácz Ákos, Juhász Zsombor 
-- Feladat: Adatbázis kapcsolat létrehozása, lekérdezések megírása, admin felület
+- Feladat: Adatbázis kapcsolat létrehozása, lekérdezések megírása, login, regisztrációs és beállítások felület funkcionalitása.
 #### Frontend munkálatok: Jakab Ádám, Zajácz Ákos, Juhász Zsombor, Horváth Dániel
-- Feladat: Egy letisztult, könnyen kezelhető felhasználói felület létrehozása
+- Feladat: Egy letisztult, könnyen kezelhető felhasználói felület létrehozása.
 
 ### Ütemterv:
 
@@ -29,6 +29,7 @@
 ### Rendszerszereplők: 
 - Admin
 - User
+
 ### Rendszerhasználati esetek:
 #### Felhasználó:
 - A beállításokban tul feltölteni összeget az egyenlegére.
@@ -53,7 +54,6 @@
 ## 8. Adatbázis terv: 
 - Az adatbázis tervhez tartozó grafikont csatoljuk a rendszertervet tároló mappához.
 
-
 ## 9. Implementációs terv:
 - Web: 
 A Webes felület főként HTML, CSS, és Javascript nyelven fog készülni.
@@ -61,7 +61,7 @@ Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítj
 úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság,
 és könnyebb bővítés érdekében
 
-## 10. Teszterv: 
+## 10. Teszterv:
 ### Fő oldal tesztelése:
 - Home gomb tesztelése.
 - Register gomb tesztelése.
