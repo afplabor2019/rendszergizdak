@@ -44,8 +44,7 @@
 
 ## 5. Funkcionális terv: 
 ### Rendszerszereplők: 
-- Admin
-- User
+- Felhasználó
 
 ### Rendszerhasználati esetek:
 #### Felhasználó:
