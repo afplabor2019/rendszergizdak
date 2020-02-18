@@ -58,7 +58,38 @@ class Game extends Controller {
         }
        
         header("Location: ".URL."/game/dice");
-        
+    }
 
+    function rock_paper_scissors_game(){
+        $user= $this->model->get_user($_SESSION['id']);
+        $userBalance = $user['balance'];
+        $winOrNot = $_POST['winOrNot'];
+        $bet = $_POST['bet'];
+
+        
+        
+        if($winOrNot == 1 && $bet != 0){
+            $newBalance = $userBalance + ($bet * 3);
+            $this->model->update_balance($user['id'], $newBalance);
+            $_SESSION['message'] = 'You won! ';
+        }
+        elseif($winOrNot == 0 && $bet != 0){
+            $newBalance = $userBalance - $bet;
+            $this->model->update_balance($user['id'], $newBalance);
+            $_SESSION['message'] = 'You lost!';
+        }
+        elseif($winOrNot == 2 && $bet !=0){
+            $newBalance = $userBalance + $bet;
+            $this->model->update_balance($user['id'], $newBalance);
+            $_SESSION['message'] = 'Draw!';
+
+        }
+        else{
+            if($bet == 0){
+                $_SESSION['message'] = 'Please place your bet.';
+            }
+        }
+       
+        header("Location: ".URL."/game/rock_paper_scissors");
     }
 }
