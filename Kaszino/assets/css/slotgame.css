@@ -65,20 +65,27 @@ body {
     margin: 0;
     text-align: center;
   }
+
+    .buttons {
+     padding-bottom: 30px;
+
+   }
   
   .go {
     display: block;
     margin: 0 auto 20px;
-    padding:10px 30px;
+    padding: 0;
     font-size: 20px;
     cursor: pointer;
   }
+
   label {
     cursor: pointer;
     display: inline-block;
     width: 45%;
     text-align: center;
   }
+
   .tilted {
     transform: rotateY(45deg);
   }
