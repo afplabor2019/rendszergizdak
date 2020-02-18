@@ -18,24 +18,28 @@ class Settings extends Controller {
 
         if($user['name'] != $_POST['name']){
             $_SESSION['message'] = 'Hiba: A megadott felhasználó név nem egyezik meg a felhasználó jelenlegi nevével';
-            header("Location: ".URL."/settings");
+           
         }
 
-        else if($user['password'] != $_POST['password']){
+        if($user['password'] != $_POST['password']){
             $_SESSION['message'] = 'Hiba: A megadott jelszó  nem egyezik a felhasználó jelenlegi jelszavával';
+            
         }
 
-        else if(($user['name'] == $_POST['newName']) && ($user['password'] == $_POST['newPassword'])){
-            $_SESSION['message'] = 'Hiba: A felhasználó uj neve és jelszava megegyezik a régivel';
-        }
-
-        else if (!empty($result)) {
+        if (!empty($result) && $_POST['newName'] != $user['name']) {
             $_SESSION['message'] = 'Hiba: A felhasználónév már létezik';
         }
 
-        else {
+        if($_POST['newName'] == $user['name'] && $_POST['newPassword'] == $user['password'])
+        {
+            
+            $_SESSION['message'] = 'Hiba: A felhasználó adatai megegyeznek a régivel';
+        }
+
+        if(empty($_SESSION['message'])) {
             $this->model->update_user_data($_SESSION['id'],$_POST['newName'], $_POST['newPassword']);
             $_SESSION['message'] = 'Sikeres update!';
+
         }
         header("Location: ".URL."/settings");
     }
