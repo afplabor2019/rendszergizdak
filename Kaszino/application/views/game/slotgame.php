@@ -1,25 +1,13 @@
-<div id="stage" class="perspective-on">
-    <div id="rotate">
-	    <div id="ring1" class="ring"></div>
-	    <div id="ring2" class="ring"></div>
-		<div id="ring3" class="ring"></div>
-		<div id="ring4" class="ring"></div>
-		<div id="ring5" class="ring"></div>
+<section id = "slotBox">
+<section id="status">WELCOME!</section>
+	<section id="Slots">
+		<div id="slot1" class="a1"></div>
+		<div id="slot2" class="a1"></div>
+		<div id="slot3" class="a1"></div>
+	</section>
+	<div class="form-group">
+		<input type="hidden" id="winOrNot" name = "winOrNot"/>
+		<p>Bet: <input type="number" id="bet" name= "bet"/></p>
 	</div>
-</div>
-
-
-<div>
-	<button class="go">Start spinning</button>
-</div>
-
-<div class="buttons">
-	<label>
-		 <input type="checkbox" id="xray">
-			Show inner workings
-	</label>
-	<label>
-		<input type="checkbox" id="perspective">
-			Toggle perspective
-	</label>
-</div>
+	<section id="Start">TAKE A SPIN!</section>
+</section>

@@ -15,7 +15,21 @@
             </div>
 
             <div class="result">
-                <p>Paper covers Rock. YOU WIN!</p>
+            <p>
+                    <?php 
+                    if (isset($_SESSION['message']) && !empty($_SESSION['message'])) {
+                    echo $_SESSION['message'];
+                    unset($_SESSION['message']);
+                    }
+                    ?>
+                </p>
+                <p>
+                <?php 
+                if (isset($_SESSION['result']) && !empty($_SESSION['result'])) {
+                    echo $_SESSION['result'];
+                    unset($_SESSION['result']);}
+                ?>
+                </p>
             </div>
             <div class= "choices">
                 
@@ -29,14 +43,7 @@
                     <button type ="submit" class="far fa-hand-scissors"></button>
                 </div>
                 <p id="action-message">Make your move!</p>
-                <p>
-                    <?php 
-                    if (isset($_SESSION['message']) && !empty($_SESSION['message'])) {
-                    echo $_SESSION['message'];
-                    unset($_SESSION['message']);
-                    }
-                    ?>
-                </p>
+                
                 <p>Bet: <input type="number" name="bet"></p>
                 <input type="hidden" name="winOrNot" id="winOrNot"/>
                 <input type="hidden" name="userPick" id="userPick"/>

@@ -38,23 +38,29 @@ class Game extends Controller {
         $winOrNot = $_POST['winOrNot'];
         $bet = $_POST['bet'];
 
-        if($bet == 0){
-            $_SESSION['message'] = 'Please place your bet.';
-        }
-        if($_POST['pickedNumber'] == 0){
-            $_SESSION['result'] = 'Choose a number';
-        }
-        if($winOrNot == 1 && $bet != 0){
+        
+        if($winOrNot == 1 && $bet != 0 && $bet < $userBalance){
             $newBalance = $userBalance + ($bet * 10);
             $this->model->update_balance($user['id'], $newBalance);
             $_SESSION['message'] = 'You rolled the same number, You won! ';
             $_SESSION['result'] = "Result: " . $_POST['resultNumber'] . " Chosen number: " . $_POST['pickedNumber'];
         }
-        elseif($winOrNot == 0 && $bet != 0){
+        elseif($winOrNot == 0 && $bet != 0 && $bet < $userBalance){
             $newBalance = $userBalance - $bet;
             $this->model->update_balance($user['id'], $newBalance);
             $_SESSION['message'] = 'You lost. Please try again!';
             $_SESSION['result'] = "Result: " . $_POST['resultNumber'] . " Chosen number: " . $_POST['pickedNumber'];
+        }
+        else{
+            if($bet == 0){
+                $_SESSION['message'] = 'Please place your bet.';
+            }
+            if($_POST['pickedNumber'] == 0){
+                $_SESSION['result'] = 'Choose a number';
+            }
+            if($bet > $userBalance){
+                $_SESSION['message'] = 'Bet can\'t be more than your balance';
+            }
         }
        
         header("Location: ".URL."/game/dice");
@@ -68,28 +74,67 @@ class Game extends Controller {
 
         
         
-        if($winOrNot == 1 && $bet != 0){
+        if($winOrNot == 1 && $bet != 0 && $bet < $userBalance){
             $newBalance = $userBalance + ($bet * 3);
             $this->model->update_balance($user['id'], $newBalance);
-            $_SESSION['message'] = 'You won! ';
+            $_SESSION['message'] = $_POST['userPick'] . ' beats ' . $_POST['computerPick'];
+            $_SESSION['result'] = 'You won! ';
         }
-        elseif($winOrNot == 0 && $bet != 0){
+        elseif($winOrNot == 0 && $bet != 0 && $bet < $userBalance){
             $newBalance = $userBalance - $bet;
             $this->model->update_balance($user['id'], $newBalance);
-            $_SESSION['message'] = 'You lost!';
+            $_SESSION['message'] = $_POST['userPick'] . ' loses to ' . $_POST['computerPick'];;
+            $_SESSION['result'] = 'You lost!';
         }
-        elseif($winOrNot == 2 && $bet !=0){
-            $newBalance = $userBalance + $bet;
-            $this->model->update_balance($user['id'], $newBalance);
-            $_SESSION['message'] = 'Draw!';
+        elseif($winOrNot == 2 && $bet !=0 && $bet < $userBalance){
+            $_SESSION['message'] = $_POST['userPick'] . ' equals ' . $_POST['computerPick'];;
+            $_SESSION['result'] = 'Draw!';
 
         }
         else{
             if($bet == 0){
                 $_SESSION['message'] = 'Please place your bet.';
             }
+            if($bet > $userBalance){
+                $_SESSION['message'] = 'Bet can\'t be more than your balance';
+            }
         }
        
         header("Location: ".URL."/game/rock_paper_scissors");
+    }
+
+    function head_or_tail_game(){
+
+        $user= $this->model->get_user($_SESSION['id']);
+        $userBalance = $user['balance'];
+        $winOrNot = $_POST['winOrNot'];
+        $bet = $_POST['bet'];
+
+        
+        if($winOrNot == 1 && $bet != 0 && $bet < $userBalance){
+            $newBalance = $userBalance + $bet;
+            $this->model->update_balance($user['id'], $newBalance);
+            $_SESSION['message'] = 'You picked the right side, You won! ';
+            $_SESSION['result'] = "Result: " . $_POST['result'] . " Picked side: " . $_POST['userPick'];
+        }
+        elseif($winOrNot == 0 && $bet != 0 && $bet < $userBalance){
+            $newBalance = $userBalance - $bet;
+            $this->model->update_balance($user['id'], $newBalance);
+            $_SESSION['message'] = 'You lost. Please try again!';
+            $_SESSION['result'] = "Result: " . $_POST['result'] . " Picked side: " . $_POST['userPick'];
+        }
+        else{
+            if($bet == 0){
+                $_SESSION['message'] = 'Please place your bet.';
+            }
+            if($_POST['pickedNumber'] == 0){
+                $_SESSION['result'] = 'Choose a side';
+            }
+            if($bet > $userBalance){
+                $_SESSION['message'] = 'Bet can\'t be more than your balance';
+            }
+        }
+       
+        header("Location: ".URL."/game/headortail");
     }
 }

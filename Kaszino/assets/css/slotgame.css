@@ -1,167 +1,103 @@
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  #stage {
-    margin: 0 auto;
-    width: 600px;
-    padding: 0 0 40px;
-  }
-  
-  .perspective-on {
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;    
-  }
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+a{
+	color: #283593;
+	text-decoration: none;
+}
+h3{
+	margin-top: 12px;
+}
 
-  .perspective-off {
-  -webkit-perspective: 0;
-  -moz-perspective: 0;
-  perspective: 0;
 
-  }
-  
-  #rotate {
-    margin: 0 auto 0;
-    width: 450px;
-    height: 220px;
-    padding-top: 200px;
-    transform-style: preserve-3d;
-  }
-  
-  .ring {
-    margin: 0 auto;
-    height: 80px;
-    width: 90px;
-    float: left;
-    transform-style: preserve-3d;
-  
-  }
-  .slot {
-    position: absolute;
-    width: 90px;
-    height: 80px;
-    box-sizing: border-box;
-    opacity: 0.9;
-    color: rgba(0,0,0,0.9);
-    background: #fff;
-    border: solid 2px #000;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .backface-on {
-  -webkit-backface-visibility: visible;
-  -moz-backface-visibility: visible;
-  backface-visibility: visible;
-  }
-  
-  .slot p {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 80px;
-    margin: 0;
-    text-align: center;
-  }
-
-    .buttons {
-     padding-bottom: 30px;
-
-   }
-  
-  .go {
-    display: block;
-    margin: 0 auto 20px;
-    padding: 0;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  label {
-    cursor: pointer;
-    display: inline-block;
-    width: 45%;
-    text-align: center;
-  }
-
-  .tilted {
-    transform: rotateY(45deg);
-  }
-  
-  .spin-0     { transform: rotateX(-3719deg); }
-  .spin-1     { transform: rotateX(-3749deg); }
-  .spin-2     { transform: rotateX(-3779deg); }
-  .spin-3     { transform: rotateX(-3809deg); }
-  .spin-4     { transform: rotateX(-3839deg); }
-  .spin-5     { transform: rotateX(-3869deg); }
-  .spin-6     { transform: rotateX(-3899deg); }
-  .spin-7     { transform: rotateX(-3929deg); }
-  .spin-8     { transform: rotateX(-3959deg); }
-  .spin-9     { transform: rotateX(-3989deg); }
-  .spin-10    { transform: rotateX(-4019deg); }
-  .spin-11    { transform: rotateX(-4049deg); }
-  
-  @keyframes back-spin {
-  
-      100%  { transform: rotateX(30deg); }
-  }
-  @keyframes tiltin {
-      0%    { transform: rotateY(0deg);}
-      50%   { transform: rotateY(0deg);}
-      100%  { transform: rotateY(45deg);}
-  }
-  @keyframes tiltout {
-      0%    { transform: rotateY(45deg);}
-      100%  { transform: rotateY(0deg);}
-  }
-  
-  @keyframes spin-0 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3719deg); }
-  }
-  @keyframes spin-1 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3749deg); }
-  }
-  @keyframes spin-2 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3779deg); }
-  }
-  @keyframes spin-3 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3809deg); }
-  }
-  @keyframes spin-4 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3839deg); }
-  }
-  @keyframes spin-5 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3869deg); }
-  }
-  @keyframes spin-6 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3899deg); }
-  }
-  @keyframes spin-7 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3929deg); }
-  }
-  @keyframes spin-8 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3959deg); }
-  }
-  @keyframes spin-9 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-3989deg); }
-  }
-  @keyframes spin-10 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-4019deg); }
-  }
-  @keyframes spin-11 {
-      0%    { transform: rotateX(30deg); }
-      100%  { transform: rotateX(-4049deg); }
-  }
+section#slotBox{
+	border-radius: 5px;
+	background-color: #EF5350;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: calc((100% - 580px) / 2);
+	width: 550px;
+}
+section#status{
+	margin-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #37474F;
+	color: #FFFFFF;
+	font-size: 25px;
+	font-family: 'Roboto Mono', monospace;
+}
+section#Slots{
+	border-radius: 15px;
+	background-color: #FAFAFA;
+}
+section#Start{
+	margin-top: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #AB47BC;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+section#Gira:hover{
+	background-color: #BA68C8;
+}
+section#options{
+	margin-top: 20px;
+	padding-top: 5px;
+	border-radius: 5px;
+	background-color: #C62828;
+	color: #FFFFFF;
+}
+.option{
+	padding-left: 5px;
+}
+section#info{
+	background-color: #616161;
+	padding-left: 12px;
+	padding-bottom: 12px;
+	border-radius: 5px;
+	overflow: hidden;
+	animation-duration: 1s;
+	color: #BDBDBD;
+	margin-top: 50px;
+	margin-left: 30%;
+	margin-right: 30%;
+	display: none;
+}
+#slot1, #slot2, #slot3{
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-size: 150px;
+	width: 150px;
+	height: 150px;
+}
+.a1{
+	background-image: url("../img/slotgame/seven.png");
+}
+.a2{
+	background-image: url("../img/slotgame/cherries.png");
+}
+.a3{
+	background-image: url("../img/slotgame/club.png");
+}
+.a4{
+	background-image: url("../img/slotgame/diamond.png");
+}
+.a5{
+	background-image: url("../img/slotgame/heart.png");
+}
+.a6{
+	background-image: url("../img/slotgame/spade.png");
+}
+.a7{
+	background-image: url("../img/slotgame/joker.png");
+}
