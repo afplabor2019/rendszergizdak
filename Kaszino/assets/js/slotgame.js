@@ -3,6 +3,8 @@ $(document).ready(function() {
 	var doing = false;
 	let status = document.getElementById("status")
 	var info = true;
+	var winOrNot = document.getElementById('winOrNot');
+	var bet = document.getElementById('bet');
 	
 $("#Start").on("click",function doSlot(){
 		if (doing){return null;}
@@ -11,7 +13,8 @@ $("#Start").on("click",function doSlot(){
 		var numeberSlot1 = numChanges+randomInt(1,7)
 		var numeberSlot2 = numChanges+2*7+randomInt(1,7)
 		var numeberSlot3 = numChanges+4*7+randomInt(1,7)
-	
+		
+
 		var i1 = 0;
 		var i2 = 0;
 		var i3 = 0;
@@ -58,6 +61,9 @@ $("#Start").on("click",function doSlot(){
 			
 			slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1)
 		}
+
+		
+
 	})
 	
 	function testWin(){
@@ -73,10 +79,22 @@ $("#Start").on("click",function doSlot(){
 			(slot1 == slot3 && slot1 == "a7") ||
 			(slot2 == slot3 && slot2 == "a7") ) && !(slot1 == slot2 && slot2 == slot3 && slot1=="a7")){
 			status.innerHTML = "YOU WIN!";
+			winOrNot.value = 1;
 		}else{
 			status.innerHTML = "YOU LOSE!";
+			winOrNot.value = 0;
 		}
 		doing = false;
+
+		$.ajax({
+			url : '/Kaszino/game/slotmachine_game',
+			method : 'post',
+			data :{winOrNot : winOrNot.value, bet : bet.value},
+			success : function(response){
+				console.log(response);
+			}
+			
+		});
 	}
 	
 	

@@ -137,4 +137,25 @@ class Game extends Controller {
        
         header("Location: ".URL."/game/headortail");
     }
+
+    function slotmachine_game(){
+        if(isset($_POST['winOrNot']) && isset($_POST['bet'])){
+                
+            $user= $this->model->get_user($_SESSION['id']);
+            $userBalance = $user['balance'];
+            $winOrNot = $_POST['winOrNot'];
+            $bet = $_POST['bet'];
+
+            if($winOrNot == 1 && $bet != 0 && $bet < $userBalance){
+                $newBalance = $userBalance + ($bet * 10);
+                $this->model->update_balance($user['id'], $newBalance);
+                
+            }
+            elseif($winOrNot == 0 && $bet != 0 && $bet < $userBalance){
+                $newBalance = $userBalance - $bet;
+                $this->model->update_balance($user['id'], $newBalance);
+                
+            }
+        }   
+    }
 }
