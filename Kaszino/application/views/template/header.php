@@ -18,28 +18,27 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg border border-danger navbar-dark" style="background-color: black; color: red;">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item"><a class="nav-link" href="<?=URL?>/">Home</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-outline-danger" href="<?=URL?>/">Home</a></li>
                 <?php if (!empty($user['id'])): ?>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn btn-outline-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Games
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="<?=URL?>/game/dice">Dice</a>
+                        <div class="dropdown-menu" style="background-color: firebrick;" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item " href="<?=URL?>/game/dice">Dice</a>
                             <a class="dropdown-item" href="<?=URL?>/game/headortail">Head or Tail</a>
                             <a class="dropdown-item" href="<?=URL?>/game/rock_paper_scissors">Rock,Paper,Scissors</a>
-                            <a class="dropdown-item" href="<?=URL?>/game/roulett">Roulett</a>
                             <a class="dropdown-item" href="<?=URL?>/game/slotgame">Slotgame</a>
                         </div>
                     </li>
                     
-                    <li class="nav-item"><a class="nav-link" href="<?=URL?>/settings">Settings</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?=URL?>/home/logout">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-danger" href="<?=URL?>/settings">Settings</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-danger" href="<?=URL?>/home/logout">Logout</a></li>
                 <?php else: ?>
-                    <li class="nav-item"><a class="nav-link" href="<?=URL?>/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-danger" href="<?=URL?>/register">Register</a></li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -50,7 +49,7 @@
                 <input class="form-control" placeholder="Username" type="text" name="name">
                 <input class="form-control" placeholder="Password" type="password" name="password">
             </div>
-            <button>Login</button>
+            <button class="btn btn-outline-danger">Login</button>
         </form>
         <?php else: ?>
             
