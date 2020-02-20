@@ -5,97 +5,182 @@ var chosenNumber = 0;
 
 
 
-function rollDice() {
-    if(chosenNumber > 0 )
-    {   
-        var status = document.getElementById( 'status' );
-        var result = Math.floor( Math.random() * 6 ) + 1;
-        pickedNumber.value = chosenNumber;
-        resultNumber.value = result;
 
-        if(result == chosenNumber)
-        {
-            //status.innerHTML = 'You rolled the same number, You won! ' + '(' + 'Result: ' + result + ' Chosen number: ' + chosenNumber + ')';
-            winOrNot.value = 1;
-        }
-        else
-        {
-            //status.innerHTML = 'You lost. Please try again! ' +  '(' + 'Result: ' + result + ' Chosen number: ' + chosenNumber + ')';
-            winOrNot.value = 0;
-        }
-    }   
-    else
-    {
-        /*var status = document.getElementById( 'status' );
-        status.innerHTML = 'Please choose a number!';*/
-    }
-}
 
 
 $(document).ready(function(){
     $("#dice1").on("click",function(){
-        if(chosenNumber == 0) {
+        if(chosenNumber != 1) {
             $("#dice1").css("background-color", "green");
-            chosenNumber = 1;            
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent");   
+            chosenNumber = 1;         
         }
-        else if(chosenNumber == 1){
-            $("#dice1").css("background-color", "white");
+        else {
+             
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent"); 
             chosenNumber = 0;      
         }  
     });    
 
     $("#dice2").on("click",function(){
-        if(chosenNumber == 0) {
+        if(chosenNumber != 2) {
+            $("#dice1").css("background-color", "transparent");
             $("#dice2").css("background-color", "green");
-            chosenNumber = 2;            
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent"); 
+            chosenNumber = 2
         }
-        else if(chosenNumber == 2) {
-            $("#dice2").css("background-color", "white");
-            chosenNumber = 0;      
+        else {
+                 
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent");    
+            chosenNumber = 0;            
         }  
     });
 
     $("#dice3").on("click",function(){
-        if(chosenNumber == 0) {
+        if(chosenNumber != 3) {
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
             $("#dice3").css("background-color", "green");
-            chosenNumber = 3;            
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent");    
+            chosenNumber = 3       
         }
-        else if(chosenNumber == 3) {
-            $("#dice3").css("background-color", "white");
+        else { 
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent");    
             chosenNumber = 0;      
         }  
     });
 
     $("#dice4").on("click",function(){
-        if(chosenNumber == 0) {
+        if(chosenNumber !=4) {
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
             $("#dice4").css("background-color", "green");
-            chosenNumber = 4;            
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent"); 
+            chosenNumber = 4      
         }
-        else if(chosenNumber == 4) {
-            $("#dice4").css("background-color", "white");
-            chosenNumber = 0;      
+        else {
+             
+            
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent");    
+            chosenNumber = 0;     
         }  
     });
 
     $("#dice5").on("click",function(){
-        if(chosenNumber == 0) {
+        if(chosenNumber != 5) {
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
             $("#dice5").css("background-color", "green");
-            chosenNumber = 5;            
+            $("#dice6").css("background-color", "transparent");   
+            chosenNumber = 5;   
         }
-        else if(chosenNumber == 5) {
-            $("#dice5").css("background-color", "white");
+        else {
+            
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent");   
             chosenNumber = 0;      
         }  
     });
 
     $("#dice6").on("click",function(){
-        if(chosenNumber == 0) {
+        if(chosenNumber != 6) {
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");    
             $("#dice6").css("background-color", "green");
             chosenNumber = 6;            
         }
-        else if(chosenNumber == 6){
-            $("#dice6").css("background-color", "white");
-            chosenNumber = 0;      
+        else {
+            $("#dice1").css("background-color", "transparent");
+            $("#dice2").css("background-color", "transparent");
+            $("#dice3").css("background-color", "transparent");
+            $("#dice4").css("background-color", "transparent");
+            $("#dice5").css("background-color", "transparent");
+            $("#dice6").css("background-color", "transparent");
+            chosenNumber = 0;     
         }  
+    });
+
+    $('#btn-roll').on("click",function () {
+        var status = document.getElementById( 'status' );
+        var bet = document.getElementById('bet');
+        status.innerHTML = " ";
+        var balance = document.getElementById('user_balance');
+        var balanceData = +balance.textContent;
+        
+        if(chosenNumber > 0 && balanceData >= bet.value && bet.value != 0 && bet.value != null )
+        {   
+            
+            var result = Math.floor( Math.random() * 6 ) + 1;
+    
+            if(result == chosenNumber)
+            {
+                status.innerHTML = 'You rolled the same number, You won! ' + '(' + 'Result: ' + result + ' Chosen number: ' + chosenNumber + ')';
+                winOrNot.value = 1;
+            }
+            else
+            {
+                status.innerHTML = 'You lost. Please try again! ' +  '(' + 'Result: ' + result + ' Chosen number: ' + chosenNumber + ')';
+                winOrNot.value = 0;
+            }         
+        }   
+        else
+        {
+            if(chosenNumber ==0 ){
+                status.innerHTML += 'Please choose a number!';
+            }
+            if(bet.value == 0 || bet.value == null){
+                status.innerHTML += 'Place your bet!';
+            }
+            if(balanceData < bet.value){
+                status.innerHTML += 'Load up your balance!';
+            }
+        }
+
+        $.ajax({
+            url : '/Kaszino/game/dice_game',
+            method : 'post',
+            data :{winOrNot : winOrNot.value, bet : bet.value}
+        });
+        $('#user_balance').load("/Kaszino/game/update_userinfo");
     });
 });

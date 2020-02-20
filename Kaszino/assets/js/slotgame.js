@@ -6,7 +6,12 @@ $(document).ready(function() {
 	var winOrNot = document.getElementById('winOrNot');
 	var bet = document.getElementById('bet');
 	
+
+	
 $("#Start").on("click",function doSlot(){
+	var balance = document.getElementById('user_balance');
+	var balanceData = +balance.textContent;
+	if(bet.value != null && bet.value != 0 && balanceData >= bet.value){
 		if (doing){return null;}
 		doing = true;
 		var numChanges = randomInt(1,4)*7
@@ -18,11 +23,19 @@ $("#Start").on("click",function doSlot(){
 		var i1 = 0;
 		var i2 = 0;
 		var i3 = 0;
-		var sound = 0
 		status.innerHTML = "SPINNING"
 		slot1 = setInterval(spin1, 50);
 		slot2 = setInterval(spin2, 50);
 		slot3 = setInterval(spin3, 50);
+	}
+	else{
+		if(bet.value == null || bet.value == 0){
+			status.innerHTML = "PLACE YOUR BET!";
+		}
+		if(balanceData < bet.value){
+			status.innerHTML = "YOU HAVE TO LOAD UP BALANCE!";	
+		}
+	}
 		function spin1(){
 			i1++;
 			if (i1>=numeberSlot1){
@@ -61,8 +74,7 @@ $("#Start").on("click",function doSlot(){
 			
 			slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1)
 		}
-
-		
+			
 
 	})
 	
@@ -95,6 +107,8 @@ $("#Start").on("click",function doSlot(){
 			}
 			
 		});
+
+		$('#user_balance').load("/Kaszino/game/update_userinfo");
 	}
 	
 	

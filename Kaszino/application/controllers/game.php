@@ -39,28 +39,15 @@ class Game extends Controller {
         $bet = $_POST['bet'];
 
         
-        if($winOrNot == 1 && $bet != 0 && $bet < $userBalance){
+        if($winOrNot == 1 && $bet != 0 && $bet <= $userBalance){
             $newBalance = $userBalance + ($bet * 10);
             $this->model->update_balance($user['id'], $newBalance);
-            $_SESSION['message'] = 'You rolled the same number, You won! ';
-            $_SESSION['result'] = "Result: " . $_POST['resultNumber'] . " Chosen number: " . $_POST['pickedNumber'];
+          
         }
-        elseif($winOrNot == 0 && $bet != 0 && $bet < $userBalance){
+        elseif($winOrNot == 0 && $bet != 0 && $bet <= $userBalance){
             $newBalance = $userBalance - $bet;
             $this->model->update_balance($user['id'], $newBalance);
-            $_SESSION['message'] = 'You lost. Please try again!';
-            $_SESSION['result'] = "Result: " . $_POST['resultNumber'] . " Chosen number: " . $_POST['pickedNumber'];
-        }
-        else{
-            if($bet == 0){
-                $_SESSION['message'] = 'Please place your bet.';
-            }
-            if($_POST['pickedNumber'] == 0){
-                $_SESSION['result'] = 'Choose a number';
-            }
-            if($bet > $userBalance){
-                $_SESSION['message'] = 'Bet can\'t be more than your balance';
-            }
+           
         }
        
         header("Location: ".URL."/game/dice");
@@ -146,16 +133,27 @@ class Game extends Controller {
             $winOrNot = $_POST['winOrNot'];
             $bet = $_POST['bet'];
 
-            if($winOrNot == 1 && $bet != 0 && $bet < $userBalance){
+            if($winOrNot == 1 && $bet != 0 && $bet <= $userBalance){
                 $newBalance = $userBalance + ($bet * 10);
                 $this->model->update_balance($user['id'], $newBalance);
                 
             }
-            elseif($winOrNot == 0 && $bet != 0 && $bet < $userBalance){
+            elseif($winOrNot == 0 && $bet != 0 && $bet <= $userBalance){
                 $newBalance = $userBalance - $bet;
                 $this->model->update_balance($user['id'], $newBalance);
                 
             }
         }   
+    }
+
+    function update_userinfo(){
+        $user= $this->model->get_user($_SESSION['id']);
+        echo $user['balance'];
+    }
+
+    function pass_balance(){
+        $user= $this->model->get_user($_SESSION['id']);
+        $balance = $user['balance'];
+        echo json_encode($balance);  
     }
 }
