@@ -11,7 +11,7 @@ $(document).ready(function() {
 $("#Start").on("click",function doSlot(){
 	var balance = document.getElementById('user_balance');
 	var balanceData = +balance.textContent;
-	if(bet.value != null && bet.value != 0 && balanceData >= bet.value){
+	if(bet.value != null && bet.value > 0 && balanceData >= bet.value){
 		if (doing){return null;}
 		doing = true;
 		var numChanges = randomInt(1,4)*7
@@ -31,6 +31,9 @@ $("#Start").on("click",function doSlot(){
 	else{
 		if(bet.value == null || bet.value == 0){
 			status.innerHTML = "PLACE YOUR BET!";
+		}
+		if(bet.value < 0){
+			status.innerHTML = "BET MUST BE POSITIVE!";
 		}
 		if(balanceData < bet.value){
 			status.innerHTML = "YOU HAVE TO LOAD UP BALANCE!";	

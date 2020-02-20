@@ -7,7 +7,7 @@
 	</section>
 	<div class="form-group">
 		<input type="hidden" id="winOrNot" name = "winOrNot"/>
-		<p>Bet: <input type="number" id="bet" name= "bet"/></p>
+		<p>Bet: <input type="number" id="bet" name= "bet" min="0"/></p>
 	</div>
 	<section id="Start">TAKE A SPIN!</section>
 </section>
