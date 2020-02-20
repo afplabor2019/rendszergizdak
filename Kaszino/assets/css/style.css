@@ -1,4 +1,46 @@
+html,body{
+    
+   height: 100%;
+
+}
+.bg{
+    background-image: url("../img/home/home3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    background-color: black;
+    color:white;
     text-align: center;
+     
+}
+
+li:hover{
+    background-color: royalblue;
+}
+
+.dropdown-menu > a:hover, .dropdown-menu > a:focus{
+    background-color: royalblue;
+}
+
+.navbar-nav > li{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-group, .register{
+    color:white;
+}
+
+.welcome {
+    color: white;
+    font-family: 'Courier New', Courier, monospace; 
 }

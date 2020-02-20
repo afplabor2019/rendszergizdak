@@ -6,7 +6,7 @@
             unset($_SESSION['message']);
             }
         ?>
-        <form action="register/register_user" method="POST">
+        <form class="register" action="register/register_user" method="POST">
             <div>
                 <label>User Name</label>
                 <input type="text" class="form-control" name="name" required>
@@ -19,7 +19,7 @@
                 <label>Confirm Password</label>
                 <input type="password"  class="form-control" name="confirmPassword" required>
             </div>
-            <button type="submit" >Register</button>
+            <button class="btn btn-outline-info" type="submit">Register</button>
         </form>
     </div>
 </section>

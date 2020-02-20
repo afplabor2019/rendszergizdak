@@ -23,7 +23,7 @@
                 <label>New Password</label>
                 <input type="password"  class="form-control"  name="newPassword" required>
             </div>
-            <button>Update</button>
+            <button class="btn btn-outline-info">Update</button>
         </form>
 
         <form action="settings/loadup_balance"  method="POST">
@@ -31,7 +31,7 @@
                 <label for="incresaseBalance">Loadup Balance</label>
                 <input type="number"  class="form-control" name="increaseBalance" min=0>
             </div>
-            <button>Upload</button>
+            <button class="btn btn-outline-info">Upload</button>
         </form>
     </div>
 </section>
