@@ -1,4 +1,4 @@
-<section class="container text-center game_background">
+<section class=" text-center game_background">
         <div >
             <div class="row justify-content-center">
                 <div id="head"  class="circle" ><i class="fas fa-horse-head"></i></div>

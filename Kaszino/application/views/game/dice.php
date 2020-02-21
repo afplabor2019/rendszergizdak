@@ -1,4 +1,5 @@
-<section class="container text-center game_background"> 
+<section class=" text-center game_background"> 
+    <div>
         <div class="row justify-content-center ">
             <div id="dice1" class="dice"><i class="fas fa-dice-one" ></i></div>
             <div id="dice2" class="dice"><i class="fas fa-dice-two" ></i></div>
@@ -17,4 +18,5 @@
         <div>
             <p id="status"></p>
         </div>  
+    </div>
 </section>

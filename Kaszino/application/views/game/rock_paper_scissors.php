@@ -1,4 +1,4 @@
-<section class="container game_background">
+<section class="game_background">
     <div class="jatek" id="jatek">
             <div class="score-board">
                 <div id="user-label"><p>You</p></div>

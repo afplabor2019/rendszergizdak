@@ -10,15 +10,17 @@ h3{
 
 
 section#slotBox{
+	display: inline-block;
 	border-radius: 5px;
 	background-color: #283593;
-	margin-top: 30px;
+	margin-top: 20px;
+	margin-left: 27%;
+    margin-right: 27%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-left: calc((100% - 580px) / 2);
-	width: 550px;
+	width: 46%;
 }
 section#status{
 	margin-bottom: 25px;
@@ -32,7 +34,7 @@ section#status{
 	font-family: 'Roboto Mono', monospace;
 }
 section#Slots{
-	border-radius: 15px;
+	border-radius: 10px;
 	background-color: #FAFAFA;
 }
 section#Start{
@@ -73,10 +75,10 @@ section#info{
 	display: none;
 }
 #slot1, #slot2, #slot3{
-	display: inline-block;
+	display: inline-flex;
 	margin-top: 5px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
 	background-size: 150px;
 	width: 150px;
 	height: 150px;
