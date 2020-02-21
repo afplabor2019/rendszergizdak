@@ -28,7 +28,7 @@
                             Games
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown"> 
-                            <a class="dropdown-item" href="<?=URL?>/game/dice"><p>Dice</p></a>
+                            <a class="dropdown-item" href="<?=URL?>/game/dice">Dice</a>
                             <a class="dropdown-item" href="<?=URL?>/game/headortail">Head or Tail</a>
                             <a class="dropdown-item" href="<?=URL?>/game/rock_paper_scissors">Rock,Paper,Scissors</a>
                             <a class="dropdown-item" href="<?=URL?>/game/slotgame">Slotgame</a>

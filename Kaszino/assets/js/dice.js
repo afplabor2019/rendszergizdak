@@ -11,7 +11,7 @@ var chosenNumber = 0;
 $(document).ready(function(){
     $("#dice1").on("click",function(){
         if(chosenNumber != 1) {
-            $("#dice1").css("background-color", "blue");
+            $("#dice1").css("background-color", "royalblue");
             $("#dice2").css("background-color", "transparent");
             $("#dice3").css("background-color", "transparent");
             $("#dice4").css("background-color", "transparent");
@@ -34,7 +34,7 @@ $(document).ready(function(){
     $("#dice2").on("click",function(){
         if(chosenNumber != 2) {
             $("#dice1").css("background-color", "transparent");
-            $("#dice2").css("background-color", "blue");
+            $("#dice2").css("background-color", "royalblue");
             $("#dice3").css("background-color", "transparent");
             $("#dice4").css("background-color", "transparent");
             $("#dice5").css("background-color", "transparent");
@@ -57,7 +57,7 @@ $(document).ready(function(){
         if(chosenNumber != 3) {
             $("#dice1").css("background-color", "transparent");
             $("#dice2").css("background-color", "transparent");
-            $("#dice3").css("background-color", "blue");
+            $("#dice3").css("background-color", "royalblue");
             $("#dice4").css("background-color", "transparent");
             $("#dice5").css("background-color", "transparent");
             $("#dice6").css("background-color", "transparent");    
@@ -79,7 +79,7 @@ $(document).ready(function(){
             $("#dice1").css("background-color", "transparent");
             $("#dice2").css("background-color", "transparent");
             $("#dice3").css("background-color", "transparent");
-            $("#dice4").css("background-color", "blue");
+            $("#dice4").css("background-color", "royalblue");
             $("#dice5").css("background-color", "transparent");
             $("#dice6").css("background-color", "transparent"); 
             chosenNumber = 4      
@@ -103,7 +103,7 @@ $(document).ready(function(){
             $("#dice2").css("background-color", "transparent");
             $("#dice3").css("background-color", "transparent");
             $("#dice4").css("background-color", "transparent");
-            $("#dice5").css("background-color", "blue");
+            $("#dice5").css("background-color", "royalblue");
             $("#dice6").css("background-color", "transparent");   
             chosenNumber = 5;   
         }
@@ -126,7 +126,7 @@ $(document).ready(function(){
             $("#dice3").css("background-color", "transparent");
             $("#dice4").css("background-color", "transparent");
             $("#dice5").css("background-color", "transparent");    
-            $("#dice6").css("background-color", "blue");
+            $("#dice6").css("background-color", "royalblue");
             chosenNumber = 6;            
         }
         else {

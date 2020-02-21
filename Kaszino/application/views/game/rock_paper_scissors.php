@@ -1,13 +1,10 @@
 <section class="container game_background">
     <div class="jatek" id="jatek">
-            <h1 class="rps">Rock, Papper, Scissors Game</h1>
             <div class="score-board">
-                <div id="user-label" ><p> Player </p></div>
-                <div id="computer-label" ><p>Computer</p></div>
-                <div >
-                    <p class="user-score" id = "user-score">0</p>
-                    <p>-</p>
-                    <p class="computer-score" id = "computer-score">0</p>
+                <div id="user-label"><p>You</p></div>
+                <div id="computer-label"><p>Computer</p></div>
+                <div>
+                    <p class="user-score" id= "user-score">0</p><p id="point">:</p><p class="computer-score" id= "computer-score">0</p>
                 </div>
             </div>
 
@@ -16,14 +13,14 @@
             </div>
             <div class= "choices">
                 
-                <div class="choice" >
-                    <i type ="submit" class="far fa-hand-rock" id="r"></i>
+                <div class="choice" id="r">
+                    <i class="far fa-hand-rock" ></i>
                 </div> 
-                <div class="choice" >
-                    <i type ="submit" class="far fa-hand-paper" id="p"></i>
+                <div class="choice" id="p" >
+                    <i class="far fa-hand-paper" ></i>
                 </div>
-                <div class="choice" > 
-                    <i type ="submit" class="far fa-hand-scissors" id="s"></i>
+                <div class="choice" id="s"> 
+                    <i class="far fa-hand-scissors" ></i>
                 </div>
                 <p id="action-message">Make your move!</p>
                 
