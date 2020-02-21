@@ -1,5 +1,5 @@
-<section class="container-fluid text-center"> 
-        <div class="row justify-content-center">
+<section class="container text-center game_background"> 
+        <div class="row justify-content-center ">
             <div id="dice1" class="dice"><i class="fas fa-dice-one" ></i></div>
             <div id="dice2" class="dice"><i class="fas fa-dice-two" ></i></div>
             <div id="dice3" class="dice"><i class="fas fa-dice-three" ></i></div>

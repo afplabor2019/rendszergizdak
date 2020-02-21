@@ -1,10 +1,9 @@
-<section class="container-fluid text-center">
+<section class="container text-center game_background">
         <div >
             <div class="row justify-content-center">
-                <div id="head" class="block" >Head</div>
-                <div id="tail" class="block" >Tail</div>
+                <div id="head"  class="circle" ><i class="fas fa-horse-head"></i></div>
+                <div id="tail" class="circle" ><i class="fas fa-euro-sign"></i></div>
             </div>
-            
             <div>   
                 
                 <h2>Bet: <input type="number" name="bet" id="bet" min="0"></h2>

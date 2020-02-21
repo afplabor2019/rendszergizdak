@@ -11,7 +11,7 @@ h3{
 
 section#slotBox{
 	border-radius: 5px;
-	background-color: #EF5350;
+	background-color: #283593;
 	margin-top: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -26,7 +26,7 @@ section#status{
 	padding-bottom: 25px;
 	border-radius: 5px;
 	text-align: center;
-	background-color: #37474F;
+	background-color: black;
 	color: #FFFFFF;
 	font-size: 25px;
 	font-family: 'Roboto Mono', monospace;
@@ -41,18 +41,19 @@ section#Start{
 	padding-bottom: 25px;
 	border-radius: 5px;
 	text-align: center;
-	background-color: #AB47BC;
+	background-color: #ea0000;
 	color: #FFFFFF;
 	font-size: 25px;
 }
-section#Gira:hover{
-	background-color: #BA68C8;
+section#Start:hover{
+	background-color: #fd0000;
+	cursor : pointer;
 }
 section#options{
 	margin-top: 20px;
 	padding-top: 5px;
 	border-radius: 5px;
-	background-color: #C62828;
+	background-color: green;
 	color: #FFFFFF;
 }
 .option{

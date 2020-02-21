@@ -1,4 +1,4 @@
-<section class="container-fluid">
+<section class="container game_background">
     <div class="jatek" id="jatek">
             <h1 class="rps">Rock, Papper, Scissors Game</h1>
             <div class="score-board">

@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     $("#head").on("click",function(){
         if(chosen != 1) {
-            $("#head").css("background-color", "blue");
+            $("#head").css("background-color", "royalblue");
             $("#tail").css("background-color", "transparent");
             chosen = 1;            
         }
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     $("#tail").on("click",function(){
         if(chosen != 2) {
-            $("#tail").css("background-color", "blue");
+            $("#tail").css("background-color", "royalblue");
             $("#head").css("background-color", "transparent");
             chosen = 2;            
         }

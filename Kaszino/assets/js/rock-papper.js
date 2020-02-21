@@ -38,7 +38,7 @@ $(document).ready(function(){
 	function lose(userChoice, computerChoice){
 		computerScore++;
 		userScore_span.innerHTML = userScore;
-		userPick.value = userChoice;
+		computerScore_span.innerHTML = computerScore;
 		winOrNot.value = 0;
 		result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. YOU LOST!`;
 		document.getElementById(userChoice).classList.add('red-glow');
@@ -61,6 +61,7 @@ $(document).ready(function(){
 		result_p.innerHTML = " ";
         var balance = document.getElementById('user_balance');
 		var balanceData = +balance.textContent;
+		
 		if(balanceData >= bet.value && bet.value > 0 && bet.value != null){
 			switch (userChoice + computerChoice) {
 				case "rs":

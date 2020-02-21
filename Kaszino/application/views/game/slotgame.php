@@ -1,3 +1,4 @@
+<section class="container game_background">
 <section id = "slotBox">
 <section id="status">WELCOME!</section>
 	<section id="Slots">
@@ -10,4 +11,5 @@
 		<p>Bet: <input type="number" id="bet" name= "bet" min="0"/></p>
 	</div>
 	<section id="Start">TAKE A SPIN!</section>
+</section>
 </section>
