@@ -4,8 +4,7 @@
                 <div id="head"  class="circle" ><i class="fas fa-horse-head"></i></div>
                 <div id="tail" class="circle" ><i class="fas fa-euro-sign"></i></div>
             </div>
-            <div>   
-                
+            <div class="block">   
                 <h2>Bet: <input type="number" name="bet" id="bet" min="0"></h2>
                 <input type="hidden" name="winOrNot" id="winOrNot">
             </div>

@@ -52,7 +52,7 @@
             <button class="btn btn-outline-info">Login</button>
         </form>
         <?php else: ?>
-            <span class="navbar-text"><?=$user['name']?>'s  Balance: <span id="user_balance"><?=$user['balance']?></span></span>
+            <span class="navbar-text"><?=$user['name']?>'s  Balance: <span id="user_balance"><?=$user['balance']?></span> $</span>
         <?php endif; ?>
     </nav>
 </header>

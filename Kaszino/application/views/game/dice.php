@@ -8,8 +8,8 @@
             <div id="dice5" class="dice"><i class="fas fa-dice-five" ></i></div>
             <div id="dice6" class="dice"><i class="fas fa-dice-six" ></i></div>
         </div>
-        <div>   
-            <input type='number' name ='bet' id="bet" min="0"></input>
+        <div class="betting">   
+            <p>Bet: <input type='number' name ='bet' id="bet" min="0"></input></p>
             <input type="hidden" name ='winOrNot' id="winOrNot" value="0"></input>
         </div>       
         <div>

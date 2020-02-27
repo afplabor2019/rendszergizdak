@@ -75,14 +75,23 @@ section#info{
 	display: none;
 }
 #slot1, #slot2, #slot3{
+	
 	display: inline-flex;
 	margin-top: 5px;
-	margin-left: auto;
+	margin-left: 18px;
 	margin-right: auto;
 	background-size: 150px;
 	width: 150px;
 	height: 150px;
 }
+
+.form-group{
+	font-weight: bold;
+    font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+}
+
 .a1{
 	background-image: url("../img/slotgame/seven.png");
 }

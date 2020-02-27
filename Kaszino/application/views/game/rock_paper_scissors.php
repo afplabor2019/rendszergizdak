@@ -2,7 +2,7 @@
     <div class="jatek" id="jatek">
             <div class="score-board">
                 <div id="user-label"><p>You</p></div>
-                <div id="computer-label"><p>Computer</p></div>
+                <div id="computer-label"><p>Comp</p></div>
                 <div>
                     <p class="user-score" id= "user-score">0</p><p id="point">:</p><p class="computer-score" id= "computer-score">0</p>
                 </div>
